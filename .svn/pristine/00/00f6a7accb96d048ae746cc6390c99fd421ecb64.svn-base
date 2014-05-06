@@ -1,0 +1,2765 @@
+/* 
+Document   : style
+Created on : Feb 8, 2010, 6:08:15 PM
+Author     : Zhivko Kabaivanov
+Description:
+    Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: rgb(228, 228, 228);
+    font-family: arial;
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+}
+
+.buttonDiv {
+    height: 100px;
+    line-height: 69px;
+    text-align: center;
+}
+
+a button {
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+img{
+    border:none;
+}
+.forms  input[type=text],.forms input[type=password] {
+    padding: 10px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.contents {
+    position: static;
+    padding:10px;
+    color:black;
+    top: 653px;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+.contents .scrollable{
+    float:left;
+    width:100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 75px;
+}
+
+.checkpoint-left {
+    float: left;
+}
+.contents a{
+    color:black;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.forms{
+    background-color:#cfcfcf;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.sublines {
+    border:1px solid silver;
+}
+.reportsWidth {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 450px;
+}
+
+.reports-couples-divs {
+    float: left;
+    width: 50%;
+}
+.reports-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.reportsWidth .textInput {
+    display: block;
+    width: 85%;
+    padding: 10px;
+}
+
+.reportsWidth .textInput label {
+    float: left;
+    padding: 10px;
+}
+.reportsWidth h2 {
+    text-align: center;
+}
+
+.reportsWidth input[type=text],select {
+    margin: 0 auto;
+    padding: 10px;
+    float: right;
+}
+.reportsWidth .datepicker {
+    width: 110px;
+}
+.datepicker {
+    width: 110px !important;
+    text-align: center;
+}
+.datepickerWidth {
+    width: 110px;
+}
+.reportsWidthSubmit {
+    display: inline-block;
+    float: right;
+}
+.sellsEditDiv {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sellsEditDiv input[type="text"] {
+    padding: 10px;
+    float: right;
+}
+.sellsEditDiv .textInput {
+    display: block;
+    width: 100%;
+}
+.sellsEditDiv .textInput {
+    padding: 10px;
+}
+.sellsEditDiv .textInput .invoice {
+    margin: 0;  
+}
+.sellsEditForms {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.sellsEditForms input[type="text"],.sellsEditForms select {
+    padding: 10px;
+    float: right;
+}   
+.sellsEditForms .reserve_form {
+    width: 365px;
+}
+
+
+
+.default-input-width {
+    width: 150px;
+}
+
+.ticketDestination {
+    display:block;
+    width: 40%;
+    margin: 0 auto;
+    float: left;
+}
+.ticketDestination .textInput {
+    display: block;
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ticketDestination input[type=text], .ticketDestination select {
+    float: right;
+    padding: 10px;
+    width: 160px;
+}
+.ticketDestination input[type=submit] {
+    width: 100px;
+}
+.ticketDestination label {
+    float: left;
+    padding: 10px;
+}
+
+.checkPoint {
+    display:block;
+    width: 34%;
+    margin: 0 auto;
+}
+
+
+checkPointForms {
+    width: 69%;
+}
+
+.checkPoint input[type=submit] {
+    width: 100px;
+
+}
+.ticketDestination {
+    display:block;
+    width: 800px;
+    margin: 0 auto;
+}
+/*------------------Checkbox-------------------*/
+
+input[type=checkbox].css-checkbox {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0;
+    border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:20px;
+    height:15px; 
+    display:inline-block;
+    line-height:15px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:15px;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -15px;
+}
+
+.css-label{
+    background-image:url(http://i.share.pho.to/1d14d2e5_o.jpeg);
+}
+/*------------------Checkbox-------------------*/
+
+.active{
+    background-color:white;
+}
+
+.inactive{
+    background-color:gray;
+}
+
+input[type=text],
+input[type=password] {
+    border:1px solid gray;
+}
+
+textarea{
+    border:1px solid silver;
+}
+
+th {
+    text-align:left;
+}
+
+.ticketdest {
+    width: 175px;
+}
+
+.errors{
+
+    color:red;
+    border:1px solid silver;
+    margin-bottom:10px;
+}
+
+.lists{
+    width:25%;
+    padding:10px;
+    clear:both;
+    margin-bottom:10px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 10px;
+}
+
+.lists-ticket-info{
+    border-radius: 5px;
+    border-spacing: 10px;
+}
+
+.clear-div-both {
+    clear: both;
+}
+
+.invoice-session-table {
+    min-width: 50%;
+    border-collapse: collapse;
+}
+
+.invoice-session-table th,
+.invoice-session-table td {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.invoice-session-table th {
+    background: black;
+    color: white;
+}
+
+.invoice-session-table td {
+    background: white;
+}
+
+.invoice-session-table .pay-button {
+    padding: 15px 20px;
+    font-size: 22px;
+}
+
+.invoice, 
+.checkbox {
+    background-color: darkgray;
+    border: 1px solid gray;
+    padding: 10px;
+
+    background: #f6f8f9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+
+}
+
+.checkbox {
+    padding: 0;
+}
+
+.checkbox label {
+    padding: 10px
+}
+
+.invoiceNumber {
+    /*border: 1px solid #000000;*/
+    background-color:#cfcfcf;
+    padding:1px;
+    text-decoration:none;
+    color:black;
+    min-width: 35px;
+    text-align:center;
+    border-radius: 5px;
+
+    background: #f6f8f9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+
+}
+
+.rightInput {
+    float:none;
+    margin-right: 0;
+}
+
+.tableFreeSpaces {
+    width: 955px;
+    border: 2px dotted black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.free-places-date 
+{
+    float: left;
+    width: 10%;
+}
+
+.free-places {
+    float: right;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.free-date-and-places {
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 10px; 
+}
+
+.free-places-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.free-spaces-line {
+    padding: 10px;
+}
+#parent {
+    overflow: hidden;
+    margin-bottom: 20px;
+    line-height: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.ticket-info {
+    width: 49%;
+    float: left;
+}
+.person-info {
+    float: right;
+    width: 49%;
+}
+
+.person-info label {
+    float:left;
+    font-weight: bold;
+    display: block;
+}
+.person-info span {
+    float: right;
+    display: block;
+}
+
+#parent tbody td {
+    padding-left: 10px;
+}
+
+.lists-ticket-info tbody td {
+    padding: 5px;
+}
+
+.totalPrice {
+    background-color: white;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    line-height: 27px;
+}
+
+#parentSells {
+    overflow: hidden;
+    line-height: 27px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-right: auto;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.ticket-person-stats-div {
+    width: 44%;
+    float: left;
+}
+
+.divBox {
+    background-color: rgb(235, 235, 235);
+}
+.divBox:nth-child(2n+1) {
+    background-color: darkgray;
+}
+
+.right {
+    float: right;
+    width: 29%;
+    text-align: center;
+}
+.left {
+    overflow: hidden;
+    width: 70%;
+    text-align: center;
+}
+
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: none;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.centerButtonsSells {
+    text-align: right;
+}
+.labelText {
+    display: inline-block;
+    float: left;
+    clear: none;
+    width: auto;
+    text-align: left;
+}
+/*
+span.invoice   {
+    margin-left: 0;
+    margin-right: 5px;
+
+}*/
+
+.checkPoint .textInput {
+    display: block;
+    width: 70%;
+    padding: 16px;
+    line-height: 45px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+
+
+@media only screen and (max-width:1380px) { 
+    .checkPoint {
+        width: 100%;
+    }
+    .checkPoint .textInput {
+        width: 40%;
+    }
+    .ticket-person-stats-div {
+        width: 36%;
+    }
+    
+}
+
+@media only screen and (max-width:1280px) { 
+    .ticket-person-stats-div {
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:1080px) { 
+    #parentSells {
+        width: 80%;
+    }
+    .checkPoint {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .reportsWidth .textInput {
+        width: 80%;
+    }
+    .free-places-wrapper {
+        width: 100%;
+    }
+    .free-places {
+        float: none;
+        width: 100%;
+    }
+    .free-places-date {
+        float: none;
+        width: 100%;
+    }
+    .ticket-person-stats-div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1024px) { 
+    #parentSells {
+        width: 80%;
+    }
+    .checkPoint {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .ticket-person-stats-div {
+        width: 100%;
+    }
+    .reportsWidth {
+        width: 98%;
+    }
+    .reportsWidth .textInput {
+        width: 80%;
+    }
+    .reports-couples-divs {
+        width: 50%;
+    }
+    .reports-wrapper {
+        width: 100%;
+    }
+    .free-places-wrapper {
+        width: 100%;
+    }
+    .free-places {
+        float: none;
+        width: 100%;
+    }
+    .free-places-date {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:900px) {
+    .lists {
+        width: 90%;
+    }
+    .checkPoint {
+        width: 100%;
+    }
+    .checkPoint .textInput {
+        width: 50%;
+        margin: 0 auto;
+    }
+    #parentSells {
+        width:  90%;
+    }
+    .reportsWidth {
+        width: 100%;
+    }
+    .reportsWidth .textInput {
+        width: 80%;
+    }
+    .reportsWidth .textInput select {
+        width: 150px;
+    }
+    .reports-couples-divs {
+        width: 50%;
+    }
+    .reports-wrapper {
+        width: 100%;
+    }
+    .ticket-person-stats-div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:860px) {
+    /*MAIN*/
+    .clearfix:after {
+        content: ".";
+        display: block !important;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    body * {
+        font-size: 1em;
+    }
+    .forms input[type="text"],.forms input[type="password"]{
+        padding: 10px;
+        width: 160px;
+    }
+    /*MAIN*/
+
+    /*TICKETS*/
+    .checkPoint {
+        width: 100%;
+    }
+    
+
+    .checkPoint .textInput input[type="text"]   {
+        padding: 10px;
+        float: right;
+    }
+    .checkPoint .textInput select {
+        padding: 10px;
+        width: 230px;
+        float: right;
+    }
+
+    .checkPointForms .reserve_form {
+        padding: 0px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .checkPoint .reserve_form input[type="text"],.checkPoint .reserve_form select {
+        width: 250px;
+        padding: 10px;
+    }
+    .checkPointForms .places {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .checkpoint-left {
+        float: left;
+    }
+    /*TICKETS*/
+
+
+    /*SELLS*/
+    .ticketDestination {
+        width: 100%;
+    }
+    .ticketDestination .textInput {
+        display: block;
+        width: 60%;
+        padding: 20px;
+        line-height: 45px;
+    }
+    .ticketDestination input[type="text"],.ticketDestination select {
+        padding: 10px;
+        width: 200px;
+    }
+    ticketDestination label {
+        padding: 0px;
+    }
+    .lists {
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #parentSells {
+        width: 100%;
+    }
+    .reportsWidth {
+        width: 99%;
+    }
+    .reportsWidth .sellsEditDiv {
+        width: 98%;
+        margin-bottom: 125px;
+    }
+    .reportsWidth .sellsEditDiv input[type=text] {
+        padding: 10px;
+    }
+    .sellsEditDiv {
+
+    }
+    .sellsEditForms {
+        width: 100%;
+    }
+    .sellsEditDiv .textInput {
+        display: block;
+        padding: 20px;
+        width: 230px;
+    }
+    .sellsEditDiv .textInput input[type=text] {
+        padding: 10px;
+        float: none;
+    }
+    .reportsWidthSubmit {
+        width: 98%;
+        display: block;
+        text-align: center;
+    }
+    .reportsWidth .reserve_form {
+        display: block;
+        margin-left: auto;        
+        margin-right: auto;
+        padding: 0;
+    }
+    .reportsWidth .reserve_form input[type="text"], .reportsWidth .reserve_form select {
+        padding: 10px;
+        width: 250px;
+    }
+    /*SELLS*/
+
+    /*REPORTS*/
+    .reportsWidth h2 {
+        text-align: center;
+    }
+    .reportsWidth .textInput {
+        display: block;
+        width: 80%;
+        padding: 10px;
+        line-height: 46px;
+        margin: 20px auto;
+    }
+    .reportsWidth .textInput input[type=text] {
+        padding: 10px;
+        float: right;
+    }
+    .reportsWidth .textInput select {
+        padding: 10px;
+        width: 180px;
+        float: right;
+    }
+    .reportsWidth .textInput label {
+        float:  left;
+        padding: 0;
+    }
+
+    .tableFreeSpaces {
+        width: 100%;
+    }
+    .reports-couples-divs {
+        width: 50%;
+    }
+    .reports-wrapper {
+        width: 100%;
+    }
+    .free-places-wrapper {
+        width: 100%;
+    }
+    .free-places {
+        float: none;
+        width: 100%;
+    }
+    .free-places-date {
+        float: none;
+        width: 100%;
+    }
+    /*REPORTS*/
+
+    /*INVOICE*/
+    .lists {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #parent {
+        width: 98%;
+    }
+    #parentSells .ticket-info {
+        width: 45%;
+        margin: 0 auto;
+    }
+    #parentSells .person-info {
+        width: 50%;
+        padding: 10px;
+    }
+
+
+    /*INVOICE*/
+}
+
+@media only screen and (max-width: 800px) {
+
+
+
+}
+
+@media only screen and (max-width: 768px){
+    /*MAIN*/
+    .clearfix:after {
+        content: ".";
+        display: block !important;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    body * {
+        font-size: 1em;
+    }
+    .forms input[type="text"],.forms input[type="password"]{
+        padding: 10px;
+        width: 160px;
+    }
+    .places {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .reserve_form {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .checkpoint-left {
+        float: left;
+    }
+    /*MAIN*/
+
+    /*TICKETS*/
+    .checkPoint {
+        width: 100%;
+    }
+    .checkPoint .textInput {
+        display: block;
+        width: 60%;
+        padding: 16px;
+        line-height: 45px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .checkPoint .textInput input[type="text"]   {
+        padding: 10px;
+        float: right;
+    }
+    .checkPoint .textInput select {
+        padding: 10px;
+        width: 230px;
+        float: right;
+    }
+
+    .checkPoint .reserve_form {
+        padding: 0px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .checkPoint .reserve_form input[type="text"],.checkPoint .reserve_form select {
+        width: 250px;
+        padding: 10px;
+
+
+    }
+    .checkPoint .places {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    /*TICKETS*/
+
+
+    /*SELLS*/
+    .ticketDestination {
+        width: 100%;
+    }
+    .ticketDestination .textInput {
+        display: block;
+        width: 60%;
+        padding: 15px;
+        line-height: 45px;
+    }
+    .ticketDestination input[type="text"],.ticketDestination select {
+        padding: 10px;
+        width: 200px;
+    }
+    .ticketDestination label {
+        padding: 0;
+    }
+    .lists {
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #parentSells {
+        width: 100%;
+    }
+    #parentSells .left {
+        width: 310px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    #parentSells .right {
+        width: 114px;
+        text-align: left;
+    }
+    .reportsWidth {
+        width: 99%;
+    }
+    .reportsWidth .sellsEditDiv {
+        width: 98%;
+        margin-bottom: 125px;
+    }
+    .reportsWidth .sellsEditDiv input[type=text] {
+        padding: 10px;
+    }
+    .sellsEditDiv .textInput {
+        display: block;
+        padding: 20px;
+        width: 230px;
+    }
+    .sellsEditDiv .textInput input[type=text] {
+        padding: 10px;
+        float: none;
+    }
+    .reportsWidthSubmit {
+        width: 98%;
+        display: block;
+        text-align: center;
+    }
+    .reportsWidth .reserve_form {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    .reportsWidth .reserve_form input[type="text"], .reportsWidth .reserve_form select {
+        padding: 10px;
+        width: 250px;
+    }
+    .ticket-person-stats-div {
+        width: 100%;
+    }
+    /*SELLS*/
+
+    /*REPORTS*/
+    .reportsWidth h2 {
+        text-align: center;
+    }
+    .reportsWidth .textInput {
+        display: block;
+        width: 86%;
+        padding: 12px;
+        line-height: 46px;
+        margin: 20px auto;
+    }
+    .reportsWidth .textInput input[type=text] {
+        padding: 10px;
+        float: right;
+    }
+    .reportsWidth .textInput select {
+        padding: 10px;
+        width: 150px;
+        float: right;
+    }
+    .reportsWidth .textInput label {
+        float: left;
+        padding: 0;
+    }
+    .tableFreeSpaces {
+        width: 100%;
+    }
+    .reports-couples-divs {
+        width: 50%;
+    }
+    .reports-wrapper {
+        width: 100%;
+    }
+    .free-places-wrapper {
+        width: 100%;
+    }
+    .free-places {
+        float: none;
+        width: 100%;
+    }
+    .free-places-date {
+        float: none;
+        width: 100%;
+    }
+    /*REPORTS*/
+
+    /*INVOICE*/
+    .lists {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #parentSells {
+        width: 98%;
+    }
+    #parentSells .ticket-info {
+        width: 45%;
+        margin: 0 auto;
+    }
+    #parentSells .person-info {
+        width: 50%;
+        padding: 10px;
+    }
+    /*INVOICE*/
+
+}
+
+@media only screen and (max-width: 710px) { 
+
+}
+
+@media only screen and (max-width: 640px) { 
+    /*MAIN*/
+    .clearfix:after {
+        content: ".";
+        display: block !important;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    body * {
+        font-size: 1em;
+    }
+    .forms input[type="text"],.forms input[type="password"]{
+        padding: 10px;
+        width: 160px;
+    }
+    .places {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+
+    }
+    .reserve_form {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+        width: 400px;
+    }
+    .checkpoint-left {
+        float: none;
+    }
+    /*MAIN*/
+
+    /*TICKETS*/
+    .checkPoint {
+        width: 100%;
+    }
+    .checkPoint .textInput {
+        display: block;
+        width: 60%;
+        padding: 16px;
+        line-height: 45px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .checkPoint .textInput input[type="text"]   {
+        padding: 10px;
+        float: right;
+    }
+    .checkPoint .textInput select {
+        padding: 10px;
+        width: 230px;
+        float: right;
+    }
+
+    .checkPointForms .reserve_form {
+        padding: 0px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .checkPoint .reserve_form input[type="text"],.checkPoint .reserve_form select {
+        width: 250px;
+        padding: 10px;
+
+
+    }
+    .checkPointForms .places {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    /*TICKETS*/
+
+
+    /*SELLS*/
+    .ticketDestination {
+        width: 100%;
+    }
+    .ticketDestination .textInput {
+        display: block;
+        width: 60%;
+        padding: 15px;
+        line-height: 45px;
+    }
+    .ticketDestination input[type="text"],.ticketDestination select {
+        padding: 10px;
+        width: 200px;
+    }
+    .ticketDestination label {
+        padding: 0px;
+    }
+    .ticketDestination .invoice {
+        margin: 0;
+    }
+    .lists {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .reportsWidth {
+        width: 99%;
+    }
+    .reportsWidth .sellsEditDiv {
+        width: 98%;
+        margin-bottom: 125px;
+    }
+    .reportsWidth .sellsEditDiv input[type=text] {
+        padding: 10px;
+    }
+    .sellsEditDiv {
+        width: 60%;
+    }
+    .sellsEditForms {
+        width: 100%;
+    }
+    .sellsEditDiv .textInput {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+    .sellsEditForms .reserve_form {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        display: block;
+    }
+    .sellsEditForms .places {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        display: block;
+    }
+    .sellsEditDiv .textInput input[type=text] {
+        padding: 10px;
+        float: none;
+    }
+    .reportsWidthSubmit {
+        width: 98%;
+        display: block;
+        text-align: center;
+    }
+    .reportsWidth .reserve_form {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    .reportsWidth .reserve_form input[type="text"], .reportsWidth .reserve_form select {
+        padding: 10px;
+        width: 250px;
+    }
+    #parentSells {
+        width: 100%;
+    }
+    .ticket-person-stats-div {
+        width: 100%;
+    }
+    /*SELLS*/
+
+    /*REPORTS*/
+    .reportsWidth h2 {
+        text-align: center;
+    }
+    .reportsWidth .textInput {
+        display: block;
+        width: 55%;
+        padding: 12px;
+        line-height: 46px;
+        margin: 20px auto;
+    }
+    .reportsWidth .textInput input[type=text] {
+        padding: 10px;
+        float: right;
+
+    }
+    .reportsWidth .textInput select {
+        padding: 10px;
+        width: 180px;
+        float: right;
+    }
+    .reportsWidth .textInput label {
+        float: left;
+        padding: 0;
+    }
+    .tableFreeSpaces {
+        width: 92%;
+    }
+    .reports-couples-divs {
+        width: 100%;
+    }
+    .reports-wrapper {
+        width: 100%;
+    }
+    .free-places-wrapper {
+        width: 100%;
+    }
+    .free-places {
+        float: none;
+        width: 100%;
+    }
+    .free-places-date {
+        float: none;
+        width: 100%;
+    }
+    /*REPORTS*/
+
+    /*INVOICE*/
+    .lists {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #parent {
+        width: 98%;
+    }
+
+    #parentSells .ticket-info {
+        width: 45%;
+        margin: 0 auto;
+    }
+    #parentSells .person-info {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .clearfix:after {
+        content: ".";
+        display: block !important;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+
+    /*INVOICE*/
+}
+
+@media only screen and (max-width: 571) {
+    /*MAIN*/
+    .wrapper {
+        width: 100%;
+    }
+    body * {
+        font-size: 1em;
+    }
+    .forms input[type="text"],.forms input[type="password"]{
+        padding: 10px;
+        width: 160px;
+    }
+    .places {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .reserve_form {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .checkpoint-left {
+        float: none;
+    }
+    /*MAIN*/
+
+    /*TICKETS*/
+    .checkPoint {
+        width: 100%;
+    }
+    .checkPoint .textInput {
+        display: block;
+        width: 75%;
+        padding: 16px;
+        line-height: 45px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .checkPoint .textInput input[type="text"]   {
+        padding: 10px;
+        float: right;
+    }
+    .checkPoint .textInput select {
+        padding: 10px;
+        width: 230px;
+        float: right;
+    }
+
+    .checkPointForms .reserve_form {
+        padding: 0px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .checkPoint .reserve_form input[type="text"],.checkPoint .reserve_form select {
+        width: 250px;
+        padding: 10px;
+
+
+    }
+    .checkPointForms .places {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    /*TICKETS*/
+
+
+    /*SELLS*/
+    .ticketDestination {
+        width: 100%;
+    }
+    .ticketDestination .textInput {
+        display: block;
+        width: 75%;
+        padding: 15px;
+        line-height: 45px;
+    }
+    .ticketDestination input[type="text"],.ticketDestination select {
+        padding: 10px;
+        width: 200px;
+    }
+    .ticketDestination .invoice {
+        margin: 0;
+    }
+    .lists {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .reportsWidth {
+        width: 99%;
+    }
+    .reportsWidth .sellsEditDiv {
+        width: 98%;
+        margin-bottom: 125px;
+    }
+    .reportsWidth .sellsEditDiv input[type=text] {
+        padding: 10px;
+    }
+    .sellsEditDiv .textInput {
+        display: block;
+        padding: 20px;
+        width: 230px;
+    }
+    .sellsEditDiv .textInput input[type=text] {
+        padding: 10px;
+        float: none;
+    }
+    .reportsWidthSubmit {
+        width: 98%;
+        display: block;
+        text-align: center;
+    }
+    .reportsWidth .reserve_form {
+        display: block;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .reportsWidth .reserve_form input[type="text"], .reportsWidth .reserve_form select {
+        padding: 10px;
+        width: 250px;
+    }
+    #parentSells {
+        width: 100%;
+    }
+    .ticket-person-stats-div {
+        width: 100%;
+    }
+    /*SELLS*/
+
+    /*REPORTS*/
+    .reportsWidth h2 {
+        text-align: center;
+    }
+    .reportsWidth .textInput {
+        display: block;
+        width: 55%;
+        padding: 12px;
+        line-height: 46px;
+    }
+    .reportsWidth .textInput input[type=text] {
+        padding: 10px;
+        float: right;
+    }
+    .reportsWidth .textInput select {
+        padding: 10px;
+        width: 180px;
+        float: right;
+    }
+    .reportsWidth .textInput label {
+        float: left;
+        padding: 0;
+    }
+    .tableFreeSpaces {
+        width: 92%;
+    }
+    .reports-couples-divs {
+        width: 100%;
+    }
+    .reports-wrapper {
+        width: 100%;
+    }
+    .free-places-wrapper {
+        width: 100%;
+    }
+    .free-places {
+        float: none;
+        width: 100%;
+    }
+    .free-places-date {
+        float: none;
+        width: 100%;
+    }
+    /*REPORTS*/
+
+    /*INVOICE*/
+    .lists {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #parent {
+        width: 98%;
+    }
+    #parentSells .ticket-info {
+        width: 44%;
+        margin: 0 auto;
+    }
+    #parentSells .person-info {
+        width: 43%;
+        padding: 10px;
+    }
+
+
+    /*INVOICE*/
+    .clearfix:after {
+        content: ".";
+        display: block !important;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    /*MAIN*/
+    .wrapper {
+        width: 100%;
+    }
+    body * {
+        font-size: 1em;
+    }
+    .forms input[type="text"],.forms input[type="password"]{
+        padding: 10px;
+        width: 160px;
+    }
+    .places {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+        float: none;
+    }
+    .reserve_form {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+        float: none;
+    }
+    .checkpoint-left {
+        float: none;
+    }
+    /*MAIN*/
+
+    /*TICKETS*/
+    .checkPoint {
+        width: 100%;
+    }
+    .checkPoint .textInput {
+        display: block;
+        width: 75%;
+        padding: 16px;
+        line-height: 45px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .checkPoint .textInput input[type="text"]   {
+        padding: 10px;
+        float: right;
+    }
+    .checkPoint .textInput select {
+        padding: 10px;
+        width: 230px;
+        float: right;
+    }
+
+    .checkPoint .reserve_form {
+        padding: 0px; 
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .checkPoint .reserve_form input[type="text"],.checkPoint .reserve_form select {
+        width: 250px;
+        padding: 10px;
+
+
+    }
+    .checkPointForms .reserve_form {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    .checkPointForms .places {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    /*TICKETS*/
+
+
+    /*SELLS*/
+    .ticket-person-stats-div {
+        width: 100%;
+    }
+    .ticketDestination {
+        width: 100%;
+    }
+    .ticketDestination .textInput {
+        display: block;
+        width: 75%;
+        padding: 15px;
+        line-height: 45px;
+    }
+    .ticketDestination input[type="text"],.ticketDestination select {
+        padding: 10px;
+        width: 200px;
+    }
+    .ticketDestination label {
+        padding: 0px;
+    }
+    .ticketDestination .invoice {
+        margin: 0;
+    }
+    .lists {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .reportsWidth {
+        width: 99%;
+    }
+    .reportsWidth .sellsEditDiv {
+        width: 98%;
+        margin-bottom: 125px;
+    }
+    .reportsWidth .sellsEditDiv input[type=text] {
+        padding: 10px;
+    }
+    .sellsEditDiv .textInput {
+        display: block;
+        padding: 20px;
+        width: 230px;
+    }
+    .sellsEditDiv .textInput input[type=text] {
+        padding: 10px;
+        float: none;
+    }
+    .reportsWidthSubmit {
+        width: 98%;
+        display: block;
+        text-align: center;
+    }
+    .reportsWidth .reserve_form {
+        display: block;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .reportsWidth .reserve_form input[type="text"], .reportsWidth .reserve_form select {
+        padding: 10px;
+        width: 250px;
+    }
+    #parentSells {
+        width: 100%;
+    }
+    /*SELLS*/
+
+    /*REPORTS*/
+    .reportsWidth h2 {
+        text-align: center;
+    }
+    .reportsWidth .textInput {
+        display: block;
+        width: 70%;
+        padding: 12px;
+        line-height: 46px;
+        margin: 20px auto;
+    }
+    .reportsWidth .textInput input[type=text] {
+        padding: 10px;
+        float: right;
+    }
+    .reportsWidth .textInput select {
+        padding: 10px;
+        float: right;
+        width: 180px;
+    }
+    .reportsWidth .textInput label {
+        float: left;
+        padding: 0;
+    }
+    .tableFreeSpaces {
+        width: 92%;
+    }
+    .reports-couples-divs {
+        width: 100%;
+    }
+    .reports-wrapper {
+        width: 100%;
+    }
+    .free-places-wrapper {
+        width: 100%;
+    }
+    .free-places {
+        float: none;
+        width: 100%;
+    }
+    .free-places-date {
+        float: none;
+        width: 100%;
+    }
+    /*REPORTS*/
+
+    /*INVOICE*/
+    .lists {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #parent {
+        width: 98%;
+    }
+    #parentSells .ticket-info {
+        width: 55%;
+        margin: 0 auto;
+    }
+    #parentSells .person-info {
+        width: 40%;
+        padding: 10px;
+    }
+
+    /*INVOICE*/
+    .clearfix:after {
+        content: ".";
+        display: block !important;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+}
+
+@media only screen and (max-width: 512px) { 
+    /*MAIN*/
+    .wrapper {
+        width: 100%;
+    }
+    body * {
+        font-size: 1em;
+    }
+    .forms input[type="text"],.forms input[type="password"]{
+        padding: 10px;
+        width: 160px;
+    }
+    .places {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+
+    .reserve_form {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .checkpoint-left {
+        float: none;
+    }
+    /*MAIN*/
+
+    /*TICKETS*/
+    .checkPoint {
+        width: 100%;
+    }
+    .checkPoint .textInput {
+        display: block;
+        width: 80%;
+        padding: 16px;
+        line-height: 45px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .checkPoint .textInput input[type="text"]   {
+        padding: 10px;
+        float: right;
+    }
+    .checkPoint .textInput select {
+        padding: 10px;
+        width: 200px;
+        float: right;
+    }
+
+    .checkPoint .reserve_form {
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .checkPoint .reserve_form input[type="text"],.checkPoint .reserve_form select {
+        width: 250px;
+        padding: 10px;
+
+
+    }
+    .checkPointForms .reserve_form {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    .checkPointForms .places {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    /*TICKETS*/
+
+
+    /*SELLS*/
+    .ticket-person-stats-div {
+        width: 100%;
+    }
+    .ticketDestination {
+        width: 100%;
+    }
+    .ticketDestination .textInput {
+        display: block;
+        width: 75%;
+        padding: 15px;
+        line-height: 45px;
+    }
+    .ticketDestination input[type="text"],.ticketDestination select {
+        padding: 10px;
+        width: 165px;
+    }
+    .ticketDestination .invoice {
+        margin: 0;
+    }
+    .lists {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .reportsWidth {
+        width: 99%;
+    }
+    .reportsWidth .sellsEditDiv {
+        width: 98%;
+        margin-bottom: 125px;
+    }
+    .reportsWidth .sellsEditDiv input[type=text] {
+        padding: 10px;
+    }
+    .sellsEditDiv {
+        width: 75%;
+    }
+    .sellsEditForms {
+        width: 100%;
+    }
+    .sellsEditDiv .textInput {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+    .sellsEditForms .reserve_form {
+        display: block;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sellsEditForms .places {
+        display: block;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sellsEditDiv .textInput input[type=text] {
+        padding: 10px;
+    }
+    .reportsWidthSubmit {
+        display: block;
+        text-align: center;
+    }
+    .reportsWidth .reserve_form {
+        display: block;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .reportsWidth .reserve_form input[type="text"], .reportsWidth .reserve_form select {
+        padding: 10px;
+        width: 250px;
+    }
+    /*SELLS*/
+
+    /*REPORTS*/
+    .reportsWidth h2 {
+        text-align: center;
+    }
+    .reportsWidth .textInput {
+        display: block;
+        width: 70%;
+        padding: 12px;
+        line-height: 46px;
+        margin: 20px auto;
+    }
+    .reportsWidth .textInput input[type=text] {
+        padding: 10px;
+        float: right;
+    }
+    .reportsWidth .textInput select {
+        padding: 10px;
+        float: right;
+        width: 150px;
+    }
+    .tableFreeSpaces {
+        width: 430px;
+    }
+    .reports-couples-divs {
+        width: 100%;
+    }
+    .reports-wrapper {
+        width: 100%;
+    }
+    .free-places-wrapper {
+        width: 100%;
+    }
+    .free-places {
+        float: none;
+        width: 100%;
+    }
+    .free-places-date {
+        float: none;
+        width: 100%;
+    }
+    /*REPORTS*/
+
+    /*INVOICE*/
+    .lists-ticket-info {
+        margin: 0 auto;
+    }
+    .lists {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #parent {
+        width: 98%;
+    }
+    #parentSells .ticket-info {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #parentSells .person-info {
+        width: 93%;
+        padding: 10px;
+    }
+    .clearfix:after {
+        content: ".";
+        display: block !important;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+    /*INVOICE*/
+}
+@media only screen and (max-width:430px) {
+    /*MAIN*/
+    .wrapper {
+        width: 100%;
+    }
+    body * {
+        font-size: 1em;
+    }
+    .forms input[type="text"],.forms input[type="password"]{
+        padding: 10px;
+        width: 160px;
+    }
+    .places {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .reserve_form {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    /*MAIN*/
+
+    /*TICKETS*/
+    .checkPoint {
+        width: 100%;
+    }
+    .checkPoint .textInput {
+        display: block;
+        width: 100%;
+        padding: 16px;
+        padding-left: 0;
+        line-height: 45px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .checkPoint .textInput input[type="text"]   {
+        padding: 10px;
+        float: right;
+    }
+    .checkPoint .textInput select {
+        padding: 10px;
+        width: 230px;
+        float: right;
+    }
+
+    .checkPoint .reserve_form {
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .checkPoint .reserve_form input[type="text"],.checkPoint .reserve_form select {
+        width: 220px;
+        padding: 10px;
+
+
+    }
+    .checkPointForms .reserve_form {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    .checkPointForms .places {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    .checkpoint-left {
+        float: none;
+    }
+    /*TICKETS*/
+
+
+    /*SELLS*/
+    .ticketDestination {
+        width: 100%;
+    }
+    .ticketDestination .textInput {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        padding-left: 0px;
+        line-height: 45px;
+    }
+    .ticketDestination input[type="text"],.ticketDestination select {
+        padding: 10px;
+        width: 200px;
+    }
+    .ticketDestination label {
+        padding: 0; 
+    }
+    .ticketDestination .invoice {
+        margin: 0;
+    }
+    .lists {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #parentSells {
+        width: 98%;
+    }
+    .reportsWidth {
+        width: 99%;
+    }
+    .reportsWidth .sellsEditDiv {
+        width: 98%;
+        margin-bottom: 125px;
+    }
+    .reportsWidth .sellsEditDiv input[type=text] {
+        padding: 10px;
+    }
+    .sellsEditDiv {
+        width: 80%;
+    }
+    .sellsEditForms {
+        width: 100%;
+    }
+    .sellsEditForms .reserve_form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sellsEditForms .places {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .sellsEditDiv .textInput {
+        display: block;
+        padding: 20px;
+        width: 100%;
+    }
+    .sellsEditDiv .textInput input[type=text] {
+        padding: 10px;
+        float: none;
+    }
+    .reportsWidthSubmit {
+        display: block;
+        text-align: center;
+    }
+    .reportsWidth .invoice {
+        margin: 0;
+    }
+    .reportsWidth .reserve_form {
+        display: block;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .reportsWidth .reserve_form input[type="text"], .reportsWidth .reserve_form select {
+        padding: 10px;
+        width: 220px;
+    }
+    .ticket-person-stats-div {
+        width: 100%;
+    }
+    /*SELLS*/
+
+    /*REPORTS*/
+    .reportsWidth h2 {
+        text-align: center;
+    }
+    .reportsWidth .textInput {
+        display: block;
+        width: 80%;
+        padding: 12px;
+        line-height: 46px;
+        margin: 10px auto;
+    }
+    .reportsWidth .textInput input[type=text] {
+        padding: 10px;
+        float: right;
+    }
+    .reportsWidth .textInput select {
+        padding: 10px;
+        width: 150px;
+        float: right;
+    }
+    .reportsWidth .textInput label {
+        float: left;
+        padding: 0;
+    }
+
+    .tableFreeSpaces {
+        width: 370px;
+    }
+    .reports-couples-divs {
+        width: 100%;
+    }
+    .reports-wrapper {
+        width: 100%;
+    }
+    .free-places-wrapper {
+        width: 100%;
+    }
+    .free-places {
+        float: none;
+        width: 100%;
+    }
+    .free-places-date {
+        float: none;
+        width: 100%;
+    }
+    /*REPORTS*/
+
+    /*INVOICE*/
+    .lists-ticket-info {
+        margin: 0 auto;
+    }
+    .lists {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #parent {
+        width: 98%;
+    }
+    #parentSells .ticket-info {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #parentSells .person-info {
+        width: 93%;
+        padding: 10px;
+    }
+    .clearfix:after {
+        content: ".";
+        display: block !important;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+
+    /*INVOICE*/
+}
+@media only screen and (max-width: 360px) {    
+    /*MAIN*/
+
+    .wrapper {
+        width: 100%;
+    }
+    body * {
+        font-size: 1em;
+    }
+    .forms input[type="text"],.forms input[type="password"]{
+        padding: 10px;
+        width: 160px;
+    }
+    .places {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .reserve_form {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .checkpoint-left {
+        float: none;
+    }
+    /*MAIN*/
+
+    /*TICKETS*/
+    .checkPoint {
+        width: 100%;
+    }
+    .checkPoint .textInput {
+        display: block;
+        width: 100%;
+        padding: 16px;
+        padding-left: 0;
+        line-height: 45px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .checkPoint .textInput input[type="text"]   {
+        padding: 10px;
+        float: right;
+    }
+    .checkPoint .textInput select {
+        padding: 10px;
+        width: 160px;
+        float: right;
+    }
+
+    .checkPoint .reserve_form {
+        width: 100%;
+        padding: 0px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .checkPoint .reserve_form input[type="text"],.checkPoint .reserve_form select {
+        width: 150px;
+        padding: 10px;
+
+
+    }
+    .checkPointForms .reserve_form {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    .checkPointForms .places {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    /*TICKETS*/
+
+
+    /*SELLS*/
+    .ticket-person-stats-div {
+        width: 100%;
+    }
+    .ticketDestination {
+        width: 100%;
+    }
+    .ticketDestination .textInput {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        padding-left: 0px;
+        line-height: 45px;
+    }
+    .ticketDestination input[type="text"],.ticketDestination select {
+        padding: 10px;
+        width: 150px;
+    }
+    .lists {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #parentSells {
+        width: 98%;
+    }
+    .reportsWidth {
+        width: 99%;
+    }
+    .reportsWidth .sellsEditDiv {
+        width: 98%;
+        margin-bottom: 125px;
+    }
+    .reportsWidth .sellsEditDiv input[type=text] {
+        padding: 10px;
+    }
+
+
+    .reportsWidthSubmit {
+        width: 98%;
+        display: block;
+        text-align: right;
+    }
+
+    .reportsWidth .reserve_form {
+        display: block;
+        padding: 0;
+        margin-left: auto;        
+        margin-right: auto;
+    }
+    .reportsWidth .reserve_form input[type="text"], .reportsWidth .reserve_form select {
+        padding: 10px;
+        width: 150px;
+    }
+    .ticketDestination label {
+        padding: 0; 
+    }
+    .sellsEditDiv {
+        width: 100%;
+    }
+    .sellsEditForms {
+        width: 100%;
+    }
+    .sellsEditDiv .textInput {
+        display: block;
+        padding: 10px;
+        width: 98%;
+    }
+    .sellsEditDiv .textInput input[type=text] {
+        padding: 10px;
+        margin: 0;
+    }
+    .sellsEditForms input[type="text"], .sellsEditForms select {
+        width: 150px;
+    }
+    .sellsEditForms .reserve_form {
+        width: 100%;
+    }
+    /*SELLS*/
+
+    /*REPORTS*/
+    .reportsWidth h2 {
+        text-align: center;
+    }
+    .reportsWidth .textInput {
+        display: block;
+        width: 90%;
+        padding: 12px;
+        line-height: 46px;
+        margin: 10px auto;
+    }
+    .reportsWidth .textInput input[type=text] {
+        padding: 10px;
+        float: right
+    }
+    .reportsWidth .textInput select {
+        padding: 10px;
+        width: 160px;
+        float: right;
+    }
+    .tableFreeSpaces {
+        width: 310px;
+    }
+    .reportsWidth .textInput .invoice {
+        margin: 0;
+    }
+    .reportsWidthSubmit .invoice {
+        margin: 0;
+    }
+    .reports-couples-divs {
+        width: 100%;
+    }
+    .reports-wrapper {
+        width: 100%;
+    }
+    .free-places-wrapper {
+        width: 100%;
+    }
+    .free-places {
+        float: none;
+        width: 100%;
+    }
+    .free-places-date {
+        float: none;
+        width: 100%;
+    }
+    /*REPORTS*/
+
+    /*INVOICE*/
+    .lists-ticket-info {
+        margin: 0 auto;
+    }
+    .lists {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #parent {
+        width: 98%;
+    }
+    #parentSells .ticket-info {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #parentSells .person-info {
+        width: 93%;
+        padding: 10px;
+    }
+
+    .clearfix:after {
+        content: ".";
+        display: block !important;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+    /*INVOICE*/
+}
+
+@media only screen and (max-width: 320px) {
+    /*MAIN*/
+    .wrapper {
+        width: 100%;
+    }
+    body * {
+        font-size: 1em;
+    }
+    .forms {
+        width: 100%;
+    }
+    .forms input[type="text"],.forms input[type="password"]{
+        padding: 10px;
+        width: 150px;
+    }
+    .places {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+        width: 100%;
+        float: none;
+    }
+    .places input[type="text"] {
+        float: left;
+    }
+    .reserve_form {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+        float: none;
+        width: 100%;
+    }
+    .ticket-person-stats-div {
+        width: 100%;
+    }
+    .checkpoint-left {
+        float: none;
+    }
+    /*MAIN*/
+
+    /*TICKETS*/
+    .checkPoint {
+        width: 100%;
+    }
+    .checkPoint .textInput {
+        display: block;
+        width: 100%;
+        padding: 16px;
+        padding-left: 0;
+        line-height: 45px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .checkPoint .textInput input[type="text"]   {
+        padding: 10px;
+        float: right;
+        margin: 0;
+    }
+    .checkPoint .textInput select {
+        padding: 10px;
+        width: 160px;
+        float: right;
+    }
+    .checkPoint .reserve_form input[type="text"],.checkPoint .reserve_form select {
+        width: 150px;
+        padding: 10px;
+
+
+    }
+    .checkPointForms .reserve_form {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    .checkPointForms .places {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+    }
+    /*TICKETS*/
+
+
+    /*SELLS*/
+    .ticketDestination {
+        width: 100%;
+    }
+    .ticketDestination .textInput {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        padding-left: 0px;
+        line-height: 45px;
+    }
+    .ticketDestination .textInput label {
+        padding: 0;
+    }
+    .ticketDestination input[type="text"],.ticketDestination select {
+        padding: 10px;
+        width: 150px;
+    }
+    .lists {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #parentSells {
+        width: 98%;
+    }
+    .reportsWidth {
+        width: 99%;
+    }
+    .reportsWidth .sellsEditDiv {
+        width: 98%;
+        margin-bottom: 125px;
+    }
+    .reportsWidth .sellsEditDiv input[type=text] {
+        padding: 10px;
+    }
+    .sellsEditDiv .textInput {
+        display: block;
+        padding: 10px;
+        width: 98%;
+    }
+    .sellsEditDiv .textInput input[type=text] {
+        padding: 10px;
+        float: none;
+    }
+    .sellsEditForms .reserve_form {
+        display: block;
+        width: 100%;
+    }
+    .reportsWidthSubmit {
+        width: 98%;
+        display: block;
+        text-align: right;
+    }
+    .reportsWidth .reserve_form {
+        display: block;
+        margin-left: auto;        
+        margin-right: auto;
+        padding: 0;
+        width: 100%;
+    }
+    .reportsWidth .reserve_form input[type="text"], .reportsWidth .reserve_form select {
+        padding: 10px;
+        width: 150px;
+    }
+    .sellsEditDiv {
+        width: 100%;
+    }
+    .sellsEditForms {
+        width: 100%;
+    }
+    .sellsEditForms .reserve_form input[type="text"],.sellsEditForms .reserve_form select {
+        width: 150px;
+        padding: 10px;
+    }
+    .sellsEditForms .places {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 100%;
+        float: none;
+    }
+    /*SELLS*/
+
+    /*REPORTS*/
+    .reportsWidth h2 {
+        text-align: center;
+    }
+    .reportsWidth .textInput {
+        display: block;
+        width: 95%;
+        padding: 12px;
+        line-height: 46px;
+        margin: 10px auto;
+    }
+    .reportsWidth .textInput label {
+        float: left;
+        padding: 0;
+    }
+    .reportsWidth .textInput input[type=text] {
+        padding: 10px;
+        float: right;
+    }
+    .reportsWidth .textInput select {
+        padding: 10px;
+        width: 150px;
+        float: right;
+    }
+    .reportsWidth .textInput .invoice {
+        margin: 0;
+    }
+    .reportsWidthSubmit .invoice {
+        margin: 0;
+    }
+    .reportsWidthSubmit {
+        margin-bottom: 10px;
+    }
+    .tableFreeSpaces {
+        width: 280px;
+    }
+    .reports-couples-divs {
+        width: 100%;
+    }
+    .reports-wrapper {
+        width: 100%;
+    }
+    .free-places-wrapper {
+        width: 100%;
+    }
+    .free-places {
+        float: none;
+        width: 100%;
+    }
+    .free-places-date {
+        float: none;
+        width: 100%;
+    }
+    /*REPORTS*/
+
+    /*INVOICE*/
+    .lists-ticket-info {
+        margin: 0 auto;
+    }
+    .lists {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #parent {
+        width: 98%;
+    }
+    #parentSells .ticket-info {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #parentSells .person-info {
+        width: 93%;
+        padding: 10px;
+    }
+    /*INVOICE*/
+
+    .clearfix:after {
+        content: ".";
+        display: block !important;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+}

@@ -1,0 +1,2424 @@
+/* 
+    Document   : style
+    Created on : Feb 8, 2010, 6:08:15 PM
+    Author     : Zhivko Kabaivanov
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/*------MAIN---------*/
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    background-color: #cfcfcf;
+}
+
+.display-none {
+    display: none;
+}
+.blockLabel {
+    display: block;
+}
+.scrollable {
+    margin-top: 100px
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: gray;
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+    font-size: 1em;
+}
+
+ label {
+        white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        white-space: pre-wrap;       /* css-3 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        word-break: break-all;
+        white-space: normal;
+        background-position: 0 50%;
+    }
+
+a {
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color:#cfcfcf;
+}
+
+input[type=text],input[type=password],select {
+    padding: 10px;
+}
+
+
+#promotion_save {
+    margin-right: 0;
+}
+
+
+.contents{
+    background-color:#cfcfcf;
+    color:black;
+    padding:10px;
+}
+
+.contents a {
+    color:black;
+}
+
+.datepicker {
+    width: 80px;
+}
+
+.forms{
+    background-color:white;
+    padding:10px;
+    width: 500px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.forms input[type=text],.forms input[type=password] {
+    float: right;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.forms .buttonStyle {
+    margin-right: 0;
+}
+.formsBack {
+    background-color:white;
+    padding:10px;
+    width: 500px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.usersTable {
+    text-align: center;
+    border-collapse: collapse;  
+    padding: 10px;
+
+}
+
+.usersTable input,.usersTable select {
+    margin: 10px
+}
+
+.usersTable label {
+    padding: 10px;
+    float: left;
+}
+
+.errors{
+    width:40%;
+    margin-left:30%;
+    margin-right:30%;
+    color:red;
+    border:1px solid silver;
+    margin-bottom:10px;
+}
+
+.divBox {
+    background-color: rgb(235, 235, 235);
+}
+
+.divBox:nth-child(2n+1) {
+    background-color: darkgray;
+}
+
+.stopover-lenght {
+    width: 25px;
+}
+.time-lenght {
+    width: 50px;
+}
+
+/*------MAIN---------*/
+
+
+
+/*--------MENU---------*/
+
+.ulNoBullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.ulNoBullets ul{
+}
+.ulNoBullets li{
+    display: block;
+    float: left;
+}
+.ulNoBullets input[type=radio] {
+    display: block;
+    float: left;
+}
+
+.menu{
+    background-color:#cfcfcf;
+    padding:10px;
+    height: 40px;
+    list-style: none;
+}
+
+.menu a{
+
+    float:left;
+    background-color:white;
+    padding:1px;
+    text-decoration:none;
+    color:black;
+    min-width: 140px;
+    margin-right: 5px;
+    text-align:center;
+    margin-bottom: 2px;
+
+}
+
+
+
+
+/*--------MENU---------*/
+
+
+.datepicker input[type=text][disabled] {
+    background-color: red;
+}
+
+
+
+
+.moneyInput {
+    width: 24px;
+}
+
+
+
+.labelText {
+    display: inline-block;
+    float: left;
+    clear: none;
+    width: auto;
+    text-align: left;
+}
+
+
+/*-------Alllines.php--------*/
+
+.arrows {
+    margin-bottom: 20px;
+}
+.arrowsLeft {
+    position: absolute;
+}
+.arrowsRight {
+    position: absolute;
+    right: 0;
+}
+
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);    
+    -webkit-user-modify: read-write-plaintext-only;
+
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    border: 0;
+}
+.datepicker:disabled { 
+    background: darkgray;
+}
+
+
+
+.daysTable td {
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+}
+.daysTable th {
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+.tableFix td {
+    margin:0;
+    border-top-width: 0px; 
+    white-space: nowrap;
+    margin-top: 22px;
+    margin-left: 6px;
+    border: none;
+}
+
+.sublineDiv {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid gray;
+}
+
+.divFix {
+    width: 880px;
+    margin: 0 0 0 400px;
+    overflow-x: scroll;  
+    margin-left: 5em; 
+    overflow-y: visible;
+    padding-bottom: 1px;
+    float: right;
+}
+
+
+
+.headcol {
+    position: absolute; 
+    width: 5em; 
+    left: 0;
+    top: auto;
+}
+
+
+/*-------Checkbox------*/
+input[type=checkbox].css-checkbox {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0;
+    border:0;
+}
+.css-label{
+    background-image:url('../rmm-img/checkbox.png');
+}
+
+
+.dateInputRight li.daysListNumber {
+    width: 200px;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:10px;
+    text-align: center;
+    height:21px; 
+    width: 200px;
+    display:block;
+    line-height:18px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:15px;
+    float: left;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -21px;
+}
+/*-------Checkbox------*/
+
+
+
+.dateCheckbox {
+    margin: 0 auto;
+    width: 300px;
+}
+/*------------------DaysList-------------------*/
+
+
+#sizer {
+    width:340px;
+    background:url(http://webdesign.maratz.com/lab/fancy-checkboxes-and-radio-buttons/highlight.png) no-repeat 50% 0;
+    margin:0 auto;
+    padding:144px 200px 240px;
+}
+
+
+
+.label_check input[type=checkbox]  {
+    display:block;
+    position:absolute;
+    left:-9999px;
+    cursor:pointer;
+    line-height:20px;
+    /*padding-bottom:9px;*/
+    text-shadow:0 -1px 0 rgba(0,0,0,.2);
+}
+
+.has-js-label-checkbox-off    
+{ 
+    padding-left: 25px; 
+}
+
+.has-js-label-checkbox-on    
+{ 
+    padding-left: 25px; 
+}
+
+.has-js-label-radio-on      
+{ 
+    padding-left: 25px; 
+}
+
+.has-js-label-radio-off 
+{ 
+    padding-left: 25px; 
+}
+
+
+.has-js-label-radio-on      
+{ 
+    background:url('../images/radio-on.png') no-repeat; 
+    background-size: 18px 18px;
+    float: left;
+    cursor: pointer;
+    display: block;
+}
+
+.has-js-label-radio-off 
+{ 
+    background: url('../images/radio-off.png') no-repeat; 
+    background-size: 18px 18px;
+    float: left;
+    cursor: pointer;
+    display: block;
+
+}
+
+.has-js-label-checkbox-on {
+    background: url('../images/check-on.png') no-repeat;
+    background-size: 18px 18px;
+    cursor: pointer;
+    display: block;
+}
+
+.has-js-label-checkbox-off 
+{
+    background: url('../images/check-off.png') no-repeat; 
+    background-size: 18px 18px;
+    cursor: pointer;
+    display: block;
+
+}
+
+
+.buttonStyle {
+    background: #dbdbdb; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI3MCUiIHN0b3AtY29sb3I9IiNkYmRiZGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmNmY2ZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(top,  #dbdbdb 70%, #fcfcfc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,#dbdbdb), color-stop(100%,#fcfcfc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dbdbdb 70%,#fcfcfc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dbdbdb 70%,#fcfcfc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dbdbdb 70%,#fcfcfc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dbdbdb 70%,#fcfcfc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-8 */
+    background-color: darkgray;
+    border: 1px solid gray;
+    margin: 1em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+li.daysListNumber  {
+    background: #dbdbdb; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI3MCUiIHN0b3AtY29sb3I9IiNkYmRiZGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmNmY2ZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(top,  #dbdbdb 70%, #fcfcfc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,#dbdbdb), color-stop(100%,#fcfcfc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dbdbdb 70%,#fcfcfc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dbdbdb 70%,#fcfcfc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dbdbdb 70%,#fcfcfc 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dbdbdb 70%,#fcfcfc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-8 */
+    background-color: darkgray;
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+    width: 340px;
+}
+
+.all-lines-go-length {
+    width: 1090px;
+}
+.all-lines-go-length .forms {
+    width: 375px;
+}
+.day-list-field {
+    width: 634px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+.day-list-field li.daysListNumber {
+    float: left;
+    width: 116px;
+}
+.day-list-field li.daysListNumber .has-js .label_check {
+    padding-left: 25px;
+}
+
+.daysList {
+    border: none;
+    list-style: none;
+    padding: 1px;
+}
+.daysList li.daysListNumber {
+    height: 20px;
+}
+
+.userAccessTable .daysList li.daysListNumber {
+    height: auto;   
+}
+
+/*---------------DaysList--------------------*/
+
+
+/*--------addline.php--------*/
+
+.blockDivGoAndBack {
+    width: 235px;    
+}
+.blockDivStopSelect {
+    width: 200px;
+}
+.blockDivFromToDate {
+    width: 100%;
+    float: right;
+    margin: 0 auto;
+}
+
+/*-------Alllines.php--------*/
+
+
+
+/*---------listusers.php-------------*/
+
+.addLine {
+    width: 500px;
+    position: relative;
+}
+
+
+
+
+
+.usersTable th {
+    border: 1px solid black;
+    background: wheat;
+}
+.usersTable tbody td {
+    background: white;
+    border: 1px solid black;
+}
+
+
+/*---------listusers.php-------------*/
+
+
+/*-------cities.php--------*/
+
+.js-my-table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+}
+.gray {
+    background: darkgray;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: rgb(235, 235, 235);
+}
+
+/*-------cities.php--------*/
+
+
+.sectionDiv {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    width: 770px;
+}
+.sectionDiv input,.sectionDiv select {
+    padding: 10px;
+}
+
+/*----discountlist.php------*/
+
+.discountInput {
+    width: 155px;
+}
+
+.sectionDivDiscount {
+    width: 800px;
+}
+
+groupDiv:before,
+.groupDiv:after {
+    content:"";
+    display:table;
+}
+.groupDiv:after {
+    clear:both;
+}
+
+.colDivDiscount {
+    float: left;
+    margin: 0% 0 1% 1.6%;
+}
+
+.blockDivDiscount {
+    width: 23%;
+    margin: 5px;
+}
+
+.blockDivDiscountAdd {
+    width: 45%;
+    margin: 10px;
+    display: inline-block;
+}
+.blockDivDiscountAdd label{
+    padding: 9px;
+    width: 30%;
+    float: left;
+    text-align: left;
+}
+.blockDivDiscountAdd input[type=text] {
+    margin: 1px auto;
+    padding: 10px;
+    width: 50%;
+    float: right;
+}
+.blockDivDiscountAdd textarea{
+    float: right;
+    max-width: 50%;
+    max-height: 100px;
+    min-width: 50%;
+    min-height: 100px;
+    margin: 0;
+    padding: 10px;
+}
+
+.radioLeft {
+    display: block;
+    text-align: left;
+}
+
+.discountType {
+    float: none;
+}
+.blockDivDiscountNameAndDescription {
+    width: 300px;
+}
+/*----discountlist.php------*/
+
+
+/*----list_promotions.php------*/
+
+.blockDivPromotion {
+    width: 30%;
+}
+
+
+/*----list_promotions.php------*/
+
+
+/*----currencies.php--------*/
+
+.currenciesInput {
+    width: 110px;
+}
+/*----currencies.php--------*/
+
+
+
+/*----saved_places_list.php----*/
+
+.blockDivSavedPlaces {
+    width: 23%;
+    word-break: break-word;
+}
+/*----saved_places_list.php----*/
+.GoAndBackStyle {
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+label.GoAndBackStyle  {
+    font-weight: bolder;
+    font-size: inherit;
+}
+span.GoAndBackStyle {
+    font-weight: bolder;
+    font-size: inherit;
+}
+
+
+.blockDivFullLine {
+    width: 95%;    
+    text-align: right;
+}
+.blockDivCenterButton {
+    width: 98%;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.discountLeft {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.discountRight {
+    text-align: right;
+}
+
+.colDiv {
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+
+
+.sublines{
+    border:1px solid silver;
+}
+
+.active{
+    background-color:white;
+}
+
+.inactive{
+    background-color:gray;
+}
+
+input[type=text],
+input[type=password] {
+    border:1px solid silver;
+    display: inline-block;
+}
+
+textarea{
+    border:1px solid silver;
+}
+
+
+.places{
+    margin: 0 auto;
+    padding:10px;
+    width:290px;
+}
+
+.notreserved{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:green;
+    text-align:center;
+    border:2px solid green;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.reserved{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:red;
+    text-align:center;
+    border:2px solid red;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:default;
+}
+
+
+.clicked {
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:blue;
+    text-align:center;
+    border:2px solid blue;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+
+.inputAddLineSize {
+    width: 200px;
+}
+
+
+.dateAlignment {
+    float: none;
+    text-align: center;
+}
+
+.oneTwoTime {
+    width: auto;
+    white-space: nowrap;
+}
+
+.liMenu li {
+    display: block;
+    margin: 0 0.15em;
+    float: left;
+}
+
+
+
+.userAccessTable {
+    border-collapse: collapse; 
+}
+
+.addCenter {
+    text-align: center;
+}
+
+.dateInputRight {
+    margin: 0 auto;
+    width: 300px;
+}
+
+
+.userAccessTable td ,.userAccessTable th ,.userAccessTable tr {
+    border: 1px solid black;
+    border-bottom: 1px solid #000;
+    background: white;
+}
+
+
+@media only screen and (max-width: 1080px) { 
+    .sublineDiv {
+        width: 100%;
+    }
+    .all-lines-go-length {
+        width: 100%;
+    }
+    .all-lines-go-length .forms {
+        width: 100%;
+    }
+
+    .day-list-field {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .sublineDiv {
+        width: 100%;
+    }
+    .divFix {
+        width: 840px;
+    }
+    .all-lines-go-length {
+        width: 100%;
+    }
+    .all-lines-go-length .forms {
+        width: 100%;
+    }
+
+    .day-list-field {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 860px) { 
+    .all-lines-go-length {
+        width: 100%;
+    }
+
+    .all-lines-go-length .forms {
+        width: 100%;
+    }
+
+    .day-list-field {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .menu a {
+        min-width: 17%;
+    }
+    select,input[type='button'],input[type='text'],input[type='password'] {
+        margin: 10px;
+    }
+    .blockDivDiscountAdd {
+        width: 285px;
+    }
+    .sublineDiv {
+        width: 700px;
+    }
+    .divFix {
+        width: 550px;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    select, input[type='text'], input[type='password']
+    {
+        padding: 10px;
+
+    }
+    .sectionDivDiscount {
+        width: 630px
+    }
+    .sectionDiv input[type=text] {
+        padding: 10px;  
+    }
+    .sublineDiv {
+        width: 630px;
+    }
+    .divFix {
+        width: 500px
+    }
+    .citiesSelect {
+        width: 200px;
+    }
+    .sectionDiv {
+        width: 700px;
+    }
+    .menu {
+        height: 80px;
+    }
+    .menu a {
+        width: 23%;
+        height: 28px;
+        padding-top: 11px;
+    }
+
+    .all-lines-go-length {
+        width: 100%;
+    }
+
+    .all-lines-go-length .forms {
+        width: 100%;
+    }
+
+    .day-list-field {
+        width: 90%;
+    }
+
+    .forms input[type=submit]
+    {
+        padding: 10px;
+    }
+    .blockDivGoAndBack {
+        width: 220px;
+        text-align: center;
+    }
+    .blockDivGoAndBack input[type='text'] {
+        padding: 10px;
+    }
+    .blockDivDiscountAdd {
+        width: 256px;
+    }
+    .blockDivDiscountAdd label {
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+    .blockDivDiscountAdd input[type=text] {
+        padding: 10px;
+        text-align: center;
+        float: none;
+    }
+    .blockDivDiscountAdd textarea {
+        float: none;
+        padding: 10px;
+    }
+    .places {
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .sublineDiv {
+        width: 630px;
+    }
+    .divFix {
+        width: 500px
+    } 
+    .places {
+        margin-left: 12px;
+    }
+}
+@media only screen and (max-width: 710px) {
+    .citiesSelect {
+        width: 150px;
+    }
+    .sectionDiv {
+        width: 650px;
+    }
+    .blockDivGoAndBack {
+        width: 200px;
+    }
+    .citiesSelect {
+        width: 200px;
+    }
+    .places {
+        margin-left: 10px;
+    }
+
+}
+@media only screen and (max-width: 640px) { 
+    select, input[type='text'], input[type='password']
+    {
+        padding: 10px;
+
+    }
+    body * {
+        font-size: 1em;
+    }
+    .blockDivFromToDate {
+        float: none;
+        width: 250px;
+    }
+    .dateInputRight {
+        float: right;
+    }
+    .blockDivDiscountAdd {
+        width: 230px;   
+    }
+    .all-lines-go-length {
+        width: 100%;
+    }
+    .all-lines-go-length .forms {
+        width: 100%;
+    }
+    .day-list-field {
+        width: 90%;
+    }
+    .sectionDiv input {
+        padding: 10px;
+    }
+
+    .sublineDiv {
+        width: 98%;
+    }
+    .divFix {
+        width: 350px;
+    }
+    .blockDivStopSelect {
+        width: 100%;
+    }
+    .menu {
+        height: 80px
+    }
+    .menu a {
+        width: 22.7%;
+        height: 28px;
+        padding-top: 11px;
+    }
+    .forms
+    {
+        width: 95%;
+    }
+    .sectionDiv {
+        width: 95%;
+    }
+    .sectionDivDiscount {
+        width: 95%;
+    }
+    .blockDivDiscount {
+        width: 100%;
+    }
+    .blockDivGoAndBack {
+        width: 268px;
+        text-align: center;
+    }
+
+    .blockDivSavedPlaces {
+        width: 240px;
+    }
+    #saved_places {
+        width: 150px;
+    }
+    .errors {
+        margin-left: 0;
+        margin-right: 0;
+        width: 95%;
+    }
+    .citiesSelect {
+        width: 200px;
+    }
+    .places {
+        margin-left: 15px;
+    }
+    .blockDivDiscountAdd label {
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+    .blockDivDiscountAdd input[type=text] {
+        padding: 10px;
+        text-align: center;
+        float: none;
+    }
+    .blockDivDiscountAdd textarea {
+        float: none;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sectionDiv {
+        width: 98%;
+    }
+    .divFix {
+        width: 350px;
+    }
+    .blockDivGoAndBack {
+        width: 260px;
+        text-align: center;
+    }
+    .citiesSelect {
+        width: 200px;
+    }
+    .blockDivDiscountAdd label {
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+    .blockDivDiscountAdd input[type=text] {
+        padding: 10px;
+        text-align: center;
+        float: none;
+    }
+    .blockDivDiscountAdd textarea {
+        float: none;
+        padding: 10px;
+    }
+    .places {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 571px) { 
+    .menu {
+        height: 85px;
+    }
+    .sublineDiv {
+        width: 526px;
+    }
+    .divFix {
+        width: 400px;
+    }
+    .usersTable {
+        margin-top: 10px
+    }
+    .oneTwoTime {
+        width: 192px;
+        white-space: normal;
+    }
+    .sectionDivDiscount {
+        width: 99%;
+    }
+    .sectionDiv {
+        width: 99%;
+        margin-top: 10px;
+    }
+    .blockDivDiscount {
+        width: 100%;
+    }
+    .blockDivGoAndBack {
+        width: 240px;
+    }
+    .blockDivSavedPlaces {
+        width: 46%;
+    }
+    .citiesSelect {
+        width: auto;
+    }
+    .blockDivDiscountAdd label {
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+    .blockDivDiscountAdd input[type=text] {
+        padding: 10px;
+        text-align: center;
+        float: none;
+    }
+    .blockDivDiscountAdd textarea {
+        float: none;
+        padding: 10px;
+    }
+    .places {
+        margin-left: 35px;
+    }
+}
+@media only screen and (max-width: 568px) { 
+    .forms input[type=text] ,input[type=password] {
+        padding: 10px;
+        margin: 10px;
+    }
+    .usersTable input[type=text] ,input[type=password] { 
+        padding: 10px;
+        margin: 10px;
+    }
+    input[type=text] ,input[type=password] { 
+        padding: 10px;
+        margin: 10px;
+    }
+    textarea {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .all-lines-go-length {
+        width: 100%;
+    }
+
+    .all-lines-go-length .forms {
+        width: 100%;
+    }
+
+    .day-list-field {
+        width: 90%;
+    }
+    .places {
+        margin-left: 31px;
+    }
+    select {
+        margin: 10px;
+        padding: 10px;
+    }
+    button {
+        margin: 10px;
+    }
+    .forms {
+        height: 110px;
+    }
+    .formsBack {
+        width: 85%;
+    }
+    .menu {
+        height: 85px;
+    }
+    .sublineDiv {
+        width: 526px;
+    }
+    .divFix {
+        width: 400px;
+    }
+    .usersTable {
+        margin-top: 10px
+    }
+    .oneTwoTime {
+        width: 192px;
+        white-space: normal;
+    }
+    .sectionDivDiscount {
+        width: 99%;
+    }
+    .sectionDiv {
+        width: 99%;
+        margin-top: 10px;
+    }
+    .blockDivFromToDate {
+        width: 210px;
+        float: none;
+    }
+    .blockDiv0of4 {
+        width: 396px;
+    }
+    .dateInputRight {
+        float: right;
+    }
+    .blockDivDiscount {
+        width: 100%;
+    }
+    .blockDivGoAndBack {
+        width: 245px;
+    }
+    .blockDivDiscountAdd {
+        width: 220px;
+    }
+    .blockDivDiscountAdd label {
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+    .blockDivDiscountAdd input[type=text] {
+        padding: 10px;
+        text-align: center;
+        float: none;
+    }
+    .blockDivDiscountAdd textarea {
+        float: none;
+        padding: 10px;
+    }
+    .blockDivSavedPlaces {
+        width: 46%;
+    }
+    body * {
+        font-size: 1em;
+    }
+    .discountType {
+        float: left;
+    }
+    .citiesSelect {
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 533px) { 
+    .menu a {
+        min-width: 20%;
+    }
+    .addLine {
+        width: auto;
+    }
+    .sublineDiv {
+        width: 488px;
+    }
+    .divFix {
+        width: 347px;
+    }
+    .blockDivGoAndBack {
+        width: 238px;
+    }
+    .formsBack {
+        width: 85%;
+    }
+    #saved_places {
+        width: 110px
+    }
+}
+
+@media only screen and (max-width: 512px) { 
+    select, input[type='button'], input[type='text'], input[type='password'] {
+        padding: 10px;
+        margin: 10px;
+    } 
+    body * {
+        font-size: 1em;
+    }
+    .usersTable input {
+        padding: 10px;
+        margin: 10px;
+    }
+    textarea {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .usersTable {
+        width: 95%;
+    }
+    .citiesSelect {
+        width: 300px;
+    }
+    .divFix {
+        width: 356px;
+    }
+    .sublineDiv {
+        width: 471px
+    }
+    .menu {
+        height: 80px;
+    }
+    .sectionDiv {
+        width: 490px;
+    }
+    .sectionDivDiscount {
+        width: 445px;
+    }
+    .forms {
+        width: 95%;
+        height: 110px;
+    }
+    .formsBack {
+        width: 85%;
+    }
+
+    .all-lines-go-length {
+        width: 100%;
+    }
+
+    .all-lines-go-length .forms {
+        width: 100%;
+    }
+
+    .day-list-field {
+        width: 97%;
+    }
+
+    .day-list-field li.daysListNumber {
+        float: left;
+    }
+
+    .blockDivFromToDate {
+        width: 250px;
+        float: none;
+    }
+
+    .blockDivStopSelect {
+        width: 99%;
+    }
+    .inputAddLineSize {
+        width: 190px;
+    }
+    .blockDivDiscountAdd {
+        width: 430px;
+    }
+
+    .blockDivDiscountAdd label {
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+    .blockDivDiscountAdd input[type=text] {
+        padding: 10px;
+        text-align: center;
+        float: none;
+    }
+    .blockDivDiscountAdd textarea {
+        float: none;
+        padding: 10px;
+    }
+    .discountInput {
+        width: 170px;
+    }
+    .blockDivGoAndBack {
+        width: 237px;
+    }
+    .blockDivFullLine {
+        width: 95%;
+    }
+    .blockDivDiscount {
+        width: 100%;
+    }
+    .dateInputRight {
+        float:right;
+    }
+    .blockDivPromotion {
+        width: 100%;
+    }
+
+    .blockDiv0of4 {
+        width: 401px;
+    }
+    .blockDivSavedPlaces {
+        width: 46%;
+    }
+    #saved_places {
+        width: auto;
+    }
+    .places {
+        margin-left: 72px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) { 
+    .sectionDiv input {
+        margin: 10px;
+        padding: 10px;
+
+    }
+    textarea {
+        margin: 10px;
+        padding: 10px;
+    }
+    .places {
+        margin-left: 70px;
+    }
+    button
+    {
+        padding: 10px;
+        margin: 10px;
+    }
+    .menu {
+        height: 138px;
+    }
+    .menu a {
+        min-width: 47%;
+        height: 22px;
+        padding-top: 10px;
+    }
+    .addLine {
+        width: auto;
+    }
+    .forms
+    {
+        /*width: 100%;*/
+    }
+    .colDiv { 
+        margin: 1% 0 1% 0%;
+    }
+
+    input.colDiv {
+        margin: 10px;
+    }
+    .sectionDiv {
+        width: 98%;;
+        margin-top: 10px;
+    }
+    .blockDiv0of4 {
+        width: 370px;
+    }
+    .blockDivFullLine {
+        width: 95%;
+    }
+    .blockDivDiscount {
+
+    }
+    .blockDivDiscountAdd {
+        width: 300px;
+    }
+    .blockDivGoAndBack {
+        width: 295px;
+        text-align: center;
+    }
+    .inputAddLineSize {
+        width: 230px;
+    }
+    .citiesSelect {
+        width: 250px;
+    }
+    .blockDivFromToDate {
+        width: 250px;
+        float: none;
+    }
+
+    .blockDivPromotion {
+        width: 100%;
+    }
+    .blockDivSavedPlaces {
+        width: 100%;
+    }
+    .discountType {
+        float: left;    
+    }
+    /*
+        .labelText {
+            clear: both;
+        }*/
+    .dateAlignment {
+        float: none;
+    }
+    .sublineDiv {
+        width: 445px;
+    }
+    .divFix {
+        width: 340px;
+    }
+    #saved_places {
+        width: auto;
+    }
+    .errors {
+        margin-left: 0;
+        margin-right: 0;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 430px) { 
+    select, input[type='button'], input[type='text'], input[type='password'] {
+        padding: 10px;
+    }
+    textarea {
+        margin: 10px;
+        padding: 10px;
+
+    }
+
+    .places {
+        margin-left: 30px;
+    }
+    .citiesSelect {
+        width: 200px;
+    }
+    .usersTable {
+        width: 98%;
+    }
+    .dateInputRight {
+        float: right;
+    }
+    .blockDivFullLine {
+        width: 95%;
+    }
+
+    .menu {
+        height: 150px;
+    }
+    .menu a {
+        height: 25px;
+    }
+    .forms {
+        width: 95%;
+        height: 175px;
+    }
+    body * {
+        font-size: 1em;
+    }
+    .formsBack {
+        width: 85%;
+    }
+    .divFix {
+        width: 250px;
+    }
+    .sublineDiv {
+        width: 360px;
+    }
+    .addLine {
+        width: auto;
+    }
+    .oneTwoTime {
+        width: 262px;
+    }
+    .usersTable {
+        margin-top: 10px;
+    }
+    .sectionDivDiscount {
+        width: 400px;
+    }
+    .sectionDiv {
+        width: 370px;
+    }
+    .sectionDivDiscount {
+        width: 375px;
+    }
+    .blockDivFromToDate {
+        width: 250px;
+        float: none;
+    }
+    .blockDivStopSelect {
+        width: 98%;
+    }
+    .blockDivGoAndBack {
+        width: 315px;
+    }
+    .blockDivPromotion {
+        width: 100%;
+    }
+    .blockDivDiscountAdd {
+        width: 350px;
+    }
+    .blockDivDiscountAdd label {
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+    .blockDivDiscountAdd input[type=text] {
+        padding: 10px;
+        text-align: center;
+        float: none;
+    }
+    .blockDivDiscountAdd textarea {
+        float: none;
+        padding: 10px;
+    }
+
+    .blockDivSavedPlaces   {
+        width: 100%;
+    }
+    .discountInput {
+        width: 170px;
+    }
+
+    .errors {
+        margin-left: 0;
+        margin-right: 0;
+        width: 95%;
+    }
+    .userAccessTable {
+        width: auto !important; 
+    }
+    .userAccessTable li.daysListNumber {
+        width: 295px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .sectionDiv {
+        width: 98%;
+    }
+    textarea {
+        margin: 10px;
+        padding: 10px;
+    }
+    .forms {
+        height: 190px;
+    }
+    .day-list-field {
+        width: 88%;
+    }
+    .blockDiv0of4 {
+        width: 315px;
+    }
+    .blockDivFullLine {
+        width: 100%;
+    }
+    .blockDivGoAndBack {
+        width: 305px;
+    }
+    .blockDivDiscountAdd {
+        width: 340px;
+    }
+    .errors {
+        margin-left: 0;
+        margin-right: 0;
+        width: 95%;
+    }
+    .userAccessTable {
+        width: 330px;
+    }
+    .has-js .label_check {
+        padding-left: 30px;
+    }
+    li.daysListNumber {
+        width: auto;
+    }
+    .userAccessTable li.daysListNumber {
+        height: auto;
+        margin: 10px;
+        width: auto;
+        padding: 10px 5px;
+    }
+    .userAccessTable label.label_check {
+        white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        white-space: pre-wrap;       /* css-3 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        word-break: break-all;
+        white-space: normal;
+        background-position: 0 50%;
+    }
+    .userAccessTable fieldset {
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width: 385px) { 
+    .citiesSelect {
+        width: 200px;
+    }
+    .sublineDiv {
+        width: 360px;
+    }
+    textarea {
+        margin: 10px;
+        padding: 10px;
+    }
+    .divFix {
+        width: 245px;
+    }
+    .blockDiv0of4 {
+        width: 290px;
+    }
+    .blockDivDiscountAdd {
+        width: 270px;
+    }
+    .discountInput {
+        width: 175px;
+    }
+    .oneTwoTime {
+        width: 220px;
+        white-space: normal;
+    }
+
+    .all-lines-go-length {
+        width: 100%;
+    }
+
+    .all-lines-go-length .forms {
+        width: 100%;
+    }
+
+    .day-list-field {
+        width: 90%;
+    }
+
+    .day-list-field li.daysListNumber {
+        float: none;
+        width: 220px;
+    }
+
+    .forms {
+        width: 93%;
+        height: 170px;
+    }
+    .formsBack {
+        width: 85%;
+    }
+    .sectionDivDiscount{
+        width: 310px;
+    }
+    .forms input[type=password],input[type=text] { 
+        margin: 10px;
+        padding: 10px;
+    }
+
+    input[type=password],input[type=text] {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .sectionDiv input[type='text'] {
+        margin: 10px;
+        padding: 10px;
+    }
+    .places {
+        margin-left: 18px;
+    }
+    .errors {
+        margin-left: 0;
+        margin-right: 0;
+        width: 95%;
+    } 
+
+    .userAccessTable {
+        width: 300px;
+    }
+    li.daysListNumber {
+        width: auto;
+    }
+    .userAccessTable label.label_check {
+        white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        white-space: pre-wrap;       /* css-3 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        word-break: break-all;
+        white-space: normal;
+        background-position: 0 50%;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .wrapper {
+        width: 100%;
+    }
+    .menu {
+        height: 165px;
+    }
+    textarea {
+        margin: 10px;
+        padding: 10px;
+    }
+    select {
+        padding: 10px;
+    }
+    .sublineDiv {
+        width: 310px;
+    }
+    .divFix {
+        width: 187px;
+    }
+    .menu a {
+        min-width: 47%;
+        height: 29px;
+        padding-top: 10px;
+    }
+
+    body * {
+        font-size: 1em;
+    }
+
+    .forms
+    {
+        width: 300px;
+        height: 185px;
+    }
+
+    .forms input[type='text'],input[type='password']    {
+        padding: 10px;
+        width: 110px;
+        font-size: 1em;
+    }
+    .formsBack {
+        width: 85%;
+    }
+    .all-lines-go-length {
+        width: 100%;
+    }
+    .all-lines-go-length .forms {
+        width: 100%;
+    }
+    .day-list-field {
+        width: 90%;
+    }
+    .day-list-field li.daysListNumber {
+        float: none;
+        width: 250px;
+    }
+    .citiesSelect {
+        width: 150px;
+    }
+    .usersTable select,input {
+        margin: 10px;
+        padding: 10px;
+    }
+    .oneTwoTime {
+        width: 185px;
+        white-space: normal;
+    }
+    .places {
+        width: 271px;
+        padding: 5px;
+        margin-left: 0;
+    }
+    .usersTable {
+        margin-top: 5%;
+        width: 97%;
+    }
+    .userAccessTable {
+        margin-top: 15px;
+        width: 330px;
+    }
+    label.userAccessTable {
+        border: 1px solid black;
+    }
+    .usersTable {
+        width: 98%;
+    } 
+    .addLine {
+        width: auto;
+    }
+    .datepicker {
+        width: 90px
+    }
+    .discountInput {
+        width: 174px;
+    }
+    .discountType {
+        float: left;
+    }
+    .sectionDiv {
+        width: 310px;
+    }
+    .sectionDivDiscount {
+        width: 310px;
+    }
+    .blockDivFullLine {
+        width: 280px;
+    }
+    .blockDivFromToDate {
+        width: 240px;
+        float: none !important;
+    }
+    .blockDivStopSelect {
+        width: 98%;
+    }
+    .blockDivDiscountAdd {
+        width: 270px;
+    }
+    .blockDivDiscountAdd label {
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+    .blockDivDiscountAdd input[type=text] {
+        padding: 10px;
+        text-align: center;
+        float: none;
+    }
+    .blockDivDiscountAdd textarea {
+        float: none;
+        padding: 10px;
+    }
+
+    .moneyInput {
+        width: 20px;
+    }
+    .dateInputRight {
+        float: right;
+    }
+    .js-my-table {
+        width: 300px;   
+    }
+    .places {
+        width: auto;
+        margin-left: 10px;
+    }
+    .colDivDiscount {
+        margin: 0% 0 1% 1.6%;
+
+
+    }
+
+    #saved_places {
+        width: 140px;
+    }
+    li.daysListNumber {
+        width: auto;
+    }
+    .userAccessTable li.daysListNumber {
+        height: auto;
+        width: auto;
+        margin: 10px;
+    }
+    .userAccessTable .has-js label.c_on {
+        background-position: 0 50%;
+    }
+    .userAccessTable .has-js .label_check {
+        background-position: 0 50%;
+    }
+    .userAccessTable label {
+    }
+
+    .userAccessTable label.label_check {
+        white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        white-space: pre-wrap;       /* css-3 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        word-break: break-all;
+        white-space: normal;
+        background-position: 0 50%;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .usersTable select, input {
+        padding: 10px;
+        margin: 10px;
+    }
+    textarea {
+        margin: 10px;
+        padding: 10px;
+    }
+    .blockDivFullLine {
+        width: 300px;
+    }
+    select {
+        padding: 10px;
+    }
+    .sectionDivDiscount {
+        width: 310px;
+    }
+    .usersTable {
+        width: 98%;
+    }
+    .blockDivDiscount {
+        width: 100%;
+    }
+    .blockDivDiscountAdd {
+        width: 300px;
+    }
+    .colDivDiscount {
+        float: none;
+    }
+    .oneTwoTime {
+        width: 183px;
+    }
+    .js-my-table {
+        width: 310px;
+    }
+    .places {
+        width: auto;
+    }
+    .errors {
+        margin-left: 0;
+        margin-right: 0;
+        width: 95%;
+    }
+    #saved_places {
+        width: 150px;
+    }
+
+
+    /*---------MAIN-------------*/
+
+    body * {
+        font-size: 1em;
+    }
+    button {
+        font-size: 1em;
+    }
+    .blockDivFullLine {
+        width: 280px;
+    }
+    /*---------MAIN-------------*/
+
+
+    /*---------LINES-------------*/
+
+
+    .forms {
+        height: 175px;
+    }
+    .formsBack {
+        width: 85%;
+    }
+    .all-lines-go-length {
+        width: 100%;
+    }
+    .all-lines-go-length .forms {
+        width: 100%;
+    }
+    .day-list-field {
+        width: 90%;
+    }
+    .day-list-field li.daysListNumber {
+        float: none;
+        width: 220px;
+    }
+    /*---------LINES-------------*/
+
+
+    /*------Discounts--------*/
+    .blockDivDiscountAdd label {
+        width: 95%;
+        text-align: center;
+        padding: 20px;
+    }
+    .blockDivDiscountAdd input[type=text] {
+        padding: 10px;
+        text-align: center;
+        float: none;
+    }
+    .blockDivDiscountAdd textarea {
+        float: none;
+        padding: 10px;
+    }
+    /*-------Discount---------*/
+    .userAccessTable {
+        width: 312px;
+    }
+    li.daysListNumber {
+        width: auto;
+    }
+    .userAccessTable li.daysListNumber {
+        height: auto;
+        margin: 10px;
+        width: auto;
+    }
+    .userAccessTable .has-js label.c_on {
+        background-position: 0 50%;
+    }
+    .userAccessTable .has-js .label_check {
+        background-position: 0 50%;
+    }
+
+    .userAccessTable label.label_check {
+        white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        white-space: pre-wrap;       /* css-3 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        word-break: break-all;
+        white-space: normal;
+        background-position: 0 50%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    /*MAIN*/
+    body {
+        font-size: 1em;
+    }
+    input {
+        font-size: 1em;
+    }
+    textarea {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .forms {
+        height: 160px;
+        width: 100%;
+    }   
+    .forms input[type='text'],input[type='password']    {
+        padding: 10px;
+        margin: 10px;
+        width: 110px;
+    }
+    body * {
+        font-size: 1em;
+    }
+    input[type=password] {
+        margin:  10px;
+        padding: 0.4em;
+    }
+    input[type=button] {
+        margin: 6px;
+        padding: 10px;
+    }
+    input[type=submit] {
+        margin: 6px;
+        padding: 10px;
+    }
+    button {
+        font-size: 1em;
+    }
+
+    .usersTable select,input {
+        margin: 10px;
+        padding: 3%;
+    }
+
+    .blockDivCenterButton {
+        width: 95%;
+    }
+
+    .errors {
+        margin-left: 0;
+        margin-right: 0;
+        width: 95%;
+    }
+    .formsBack {
+        width: 85%;
+    }
+
+    #saved_places {
+        width: 150px;
+    }
+    select {
+        padding: 10px;
+        font-size: 1em;
+    }
+    .places {
+        width: 275px;
+        margin-left: 5px;
+    }
+    .placesTable {
+        margin: 5px;
+    }
+
+    .sectionDiv {
+        width: 98%;
+    }
+    /*MAIN*/
+
+
+
+    /*--Login/LogOut--*/
+    .wrapper {
+        width: 100%;
+    }
+
+    .contents {
+        padding: 1px;
+    }
+
+    /*--Login/LogOut--*/
+
+
+    /*LINES*/
+    .sublineDiv {
+        width: 290px;
+    }
+    .divFix {
+        width: 175px;
+    }
+    .blockDivGoAndBack {
+        width: 99%;
+        text-align: center;
+    }
+    .blockDivFullLine {
+        width: 300px;
+    }
+
+
+    li.daysListNumber {
+        width: auto;
+    }
+
+    .blockDivFromToDate {
+        width: 285px;
+        float: none;
+    }
+    .blockDivStopSelect {
+        width: 300px;
+    }
+    .dateInputRight {
+        float: right;
+    }
+    .moneyInput {
+        width: 30px;
+    }
+    .colDiv {
+        margin: 0;
+    }
+    .all-lines-go-length {
+        width: 100%;
+    }
+    .all-lines-go-length .forms {
+        width: 100%;
+    }
+    .day-list-field {
+        width: 90%;
+    }
+    .day-list-field li.daysListNumber {
+        float: none;
+        width: 220px;
+    }
+    /*LINES*/
+    /*USERS*/
+    .usersTable {
+        width: 95%;
+    }
+
+    /*USERS*/
+
+    /*CITIES*/
+
+    .js-my-table {
+        width: 280px;
+    }
+
+    /*CITIES*/
+    .addLine {
+        width: auto;
+    }
+    .labelText {
+        clear: both;
+    } 
+    .userAccessTable fieldset {
+        padding: 0;
+    }
+
+    .userAccessTable li.daysListNumber {
+        height: auto;
+        width: auto;
+        margin: 10px;
+        padding: 10px;  
+    }
+    .userAccessTable .has-js label.c_on {
+        background-position: 0 50%;
+    }
+    .userAccessTable .has-js .label_check {
+        background-position: 0 50%;
+    }
+
+    .userAccessTable label.label_check {
+        white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        white-space: pre-wrap;       /* css-3 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        word-break: break-all;
+        white-space: normal;
+        background-position: 0 50%;
+    }
+
+    .oneTwoTime {
+        width: 165px;
+        white-space: normal;
+    }
+
+    /*DISOUNCTS*/
+
+
+    .sectionDivDiscount {
+        width: 295px;
+    }
+    .colDivDiscount {
+        margin: 0% 0 1% 1.6%;
+        float: right;
+    }
+
+    .discountInput {
+        width: 150px;
+    }
+
+    .blockDivDiscountAdd {
+        width: 290px;
+    }
+    .discountType {
+        float: left;
+    }
+    .blockDivDiscountAdd label {
+        width: 95%;
+        text-align: center;
+        padding: 10px;
+    }
+    .blockDivDiscountAdd input[type=text] {
+        padding: 10px;
+        text-align: center;
+        float: none;
+    }
+    .blockDivDiscountAdd textarea {
+        float: none;
+        padding: 10px;
+    }
+    /*DISOUNCTS*/
+
+    /*Savedplaces*/
+    .blockDivSavedPlaces {
+    }
+    /*Savedplaces*/
+}

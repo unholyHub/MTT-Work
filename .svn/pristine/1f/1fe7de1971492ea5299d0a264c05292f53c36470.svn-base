@@ -1,0 +1,518 @@
+/* 
+    Document   : style
+    Created on : Feb 8, 2010, 6:08:15 PM
+    Author     : root
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: rgb(228, 228, 228);
+    font-family: arial;
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+
+a button {
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+img{
+    border:none;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height:30px;
+    line-height:30px;
+    background-color:white;
+    padding:10px;
+    border-bottom: 1px solid black;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 7px 15px black;
+
+    background: #45484d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.menu a {
+    float:left;
+    background-color:#cfcfcf;
+    padding:1px;
+    text-decoration:none;
+    color:black;
+    min-width: 140px;
+    margin-right: 5px;
+    text-align:center;
+    border-radius: 5px;
+
+    background: #f6f8f9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+
+}
+
+.contents {
+    position: fixed;
+    padding:10px;
+    color:black;
+    top: 65px;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+.contents .scrollable{
+    float:left;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.contents a{
+    color:black;
+}
+
+.forms{
+    background-color:#cfcfcf;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.sublines {
+    border:1px solid silver;
+}
+
+.active{
+    background-color:white;
+}
+
+.inactive{
+    background-color:gray;
+}
+
+input[type=text],
+input[type=password] {
+    border:1px solid gray;
+}
+
+textarea{
+    border:1px solid silver;
+}
+
+th{
+    text-align:left;
+}
+
+.ticketdest {
+    width: 175px;
+}
+
+.errors{
+
+    color:red;
+    border:1px solid silver;
+    margin-bottom:10px;
+}
+
+.lists{
+    float:left;
+    width:90%;
+    background-color: silver;
+    /*#c0c0c0;*/
+    padding:10px;
+    clear:both;
+    margin-bottom:10px;
+    margin-left:5%;
+    margin-right:5%;
+
+    border-radius: 10px;
+}
+
+.lists-ticket-info{
+    width:75%;
+    border:1px solid gray;
+    border-radius: 5px;
+    background: white;
+}
+
+.invoice-session-table {
+    min-width: 50%;
+    border-collapse: collapse;
+}
+
+.invoice-session-table th,
+.invoice-session-table td {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.invoice-session-table th {
+    background: black;
+    color: white;
+}
+
+.invoice-session-table td {
+    background: white;
+}
+
+.invoice-session-table .pay-button {
+    padding: 15px 20px;
+    font-size: 22px;
+}
+
+.invoice {
+    /*border: 1px solid #000000;*/
+    background-color:#cfcfcf;
+    padding:1px;
+    text-decoration:none;
+    color:black;
+    min-width: 35px;
+    text-align:center;
+    border-radius: 5px;
+
+    background: #f6f8f9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+
+}
+
+div .lists:nth-child(2n+1) {
+    background-color: #888;
+}
+
+.rightInput {
+    float:none;
+    margin-right: 0;
+}
+
+#parent {
+    overflow: hidden;
+    margin-bottom: 20px;
+    line-height: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+#parentSells {
+    overflow: hidden;
+    margin-bottom: 20px;
+    line-height: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 29%;
+    height: 26px;
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.right2 {
+    float: right;
+    width: 29%;
+    height: 26px;
+    background: white;
+    border: 1px solid black;
+    text-align: center;
+}
+.left {
+    overflow: hidden;
+    height: 26px;
+    width: 70%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .menu a {
+        min-width: 17%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .menu a {
+        min-width: 17%;
+    }
+    .floatLeft {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 640px) { 
+    .wrapper {
+        width: 100%;
+    }
+    .contents {
+        padding: 0;
+        top: 100px;      
+
+    }
+    .contents .scrollable {
+        margin: 0% auto;
+        width: 99%;
+        height: 98%;        
+    }
+    body {
+        font-size: 1em;
+    }
+    .form {
+        font-size: 1.22em;
+        padding: 0;
+    }
+
+    input {
+        height: 26px;
+    }
+    input[type=submit] {
+        height: 26px;
+        font-size: 1em;
+    }
+    select {
+        height: 26px;
+        font-size: inherit;
+    }
+    button {
+        height: 26px;
+        font-size: inherit;
+    }
+    .menu {
+        font-size: 1.40em;
+        height: 65px;        
+    }
+
+    .menu a {
+        font-size: 0.8em;
+        height: 30px;
+        min-width: 31%;        
+        margin-right: 1%;
+        margin-bottom: 1.50%;
+    }
+    .lists {
+        margin-bottom: 5%;
+        margin-left: 0;
+        width: 99%;
+        padding: 0;
+    }  
+}
+
+@media only screen and (max-width: 568px) {
+    .contents {
+        top: 120px;
+    }
+    .menu {
+        height: 75px;
+    }
+    #parent {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 480px) { 
+    .wrapper {
+        width: 100%;
+    }
+    .contents {
+        padding: 0;
+        top: 100px;      
+
+    }
+    .contents .scrollable {
+        margin: 0% auto;
+        width: 99%;
+        height: 98%;        
+    }
+    body {
+        font-size: 1em;
+    }
+    .form {
+        font-size: 1.22em;
+        padding: 0;
+    }
+
+    input {
+        height: 26px;        
+        vertical-align: middle;
+    }
+    input[type=submit] {
+        height: 26px;
+        font-size: 1em;
+    }
+    select {
+        height: 26px;
+        font-size: inherit;
+    }
+
+    button {
+        height: 26px;
+        font-size: inherit;
+    }
+    .menu {
+        font-size: 1.40em; 
+        height: 57.6px;
+    }
+
+    .menu a {
+        font-size: 0.8em;
+        height: 25.92px;
+        min-width: 30%;        
+        margin-right: 1%;
+        margin-bottom: 1.50%;
+    }
+    .lists {
+        margin-bottom: 5%;
+        margin-left: 0;
+        width: 99%;
+        padding: 0;
+    }  
+    .floatLeft {
+        float: none;
+    }  
+    
+    .rightInput {
+        float: right;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .contents {
+        top: 117px;
+    }
+    .right {
+        width: 46%;
+        display: inline-table;
+    }
+    .right2 {
+        width: 45%;
+    }
+    .left {
+        width: 52%;
+        display: inline-table;
+    }
+    #parent {
+        width: 95%;
+    }
+    #parentSells {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .wrapper {
+        width: 100%;
+    }
+    .contents {
+        padding: 0;
+        top: 140px;      
+
+    }
+    .contents .scrollable {
+        margin: 0% auto;
+        width: 99%;
+        height: 98%;        
+    }
+    body {
+        font-size: 1em;
+    }
+    .form {
+        font-size: 1.22em;
+        padding: 0;
+    }  
+    input {
+        height: 26px;
+        vertical-align: middle;
+    }
+    input[type=submit] {
+        height: 26px;
+        font-size: 1em; 
+    }
+    select {
+        height: 26px;
+        font-size: inherit;
+    }
+    button {
+        height: 26px;
+        font-size: inherit;
+    }
+    .menu {
+        font-size: 1.40em;
+        height: 90px;        
+    }
+
+    .menu a {
+        font-size: 0.8em;
+        padding: 0.5%;
+        min-width: 48%;
+        height: 26px;
+        margin-right: 1%;
+        margin-bottom: 1.50%;
+    }
+    .lists {
+        margin-bottom: 5%;
+        margin-left: 0;
+        width: 99%;
+        padding: 0;
+    }  
+    .floatLeft {
+        float: none;
+    }
+    .floatRight {
+        float: right;
+    }
+    
+    
+}

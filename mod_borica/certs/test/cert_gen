@@ -1,0 +1,11 @@
+#!/bin/bash
+# This script generates Privte key and signs self signed certificate with it.
+
+# 3. openssl req -new -key filename.key -x509 -out filename.crt  # <-- Tova suzdava zaiyavka za samopodpisan sertifikat !!!
+# Tova za sega neshto ne raboti ...
+
+sercretKeyName="test"
+
+openssl genrsa -out $sercretKeyName.key 1024
+openssl req -new -key $sercretKeyName.key -out $sercretKeyName.csr  # <-- nova zaiyavka za podpis na sertifikat.
+#openssl x509 -req -days 365 -in certificate_request.csr -signkey private_server.key -out certificate_self_signed.crt

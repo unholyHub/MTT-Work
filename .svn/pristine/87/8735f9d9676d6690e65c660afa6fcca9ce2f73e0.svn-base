@@ -1,0 +1,24 @@
+body{
+    width: 794px;
+}
+.subline_date{
+    border-spacing:0px;
+    width: 630px;
+    font-size:14px;
+    float:left;
+}
+
+.subline_date td{
+    border:solid #cfcfcf 1px;
+}
+
+.landscape_report{
+    border-spacing:0px;
+    width:1050px;
+    float:left;
+    font-size:12px;
+}
+
+.landscape_report td{
+    border:solid #cfcfcf 1px;
+}

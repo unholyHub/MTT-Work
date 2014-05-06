@@ -1,0 +1,58 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BTMS Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            body {
+                background: #d9d9d9;
+            }
+            
+            #loader {
+                background: white;
+                border: 1px solid silver;
+                width: 353px;
+                height: 168px;
+                padding: 20px;
+                
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                
+                margin-left: -176px;
+                margin-top: -84px;
+                
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -o-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -khtml-border-radius: 20px;
+            }
+            
+            img {
+                width: 154px;
+            }
+        </style>
+    </head>
+    <body>
+        <div align="right">
+            <button onclick="window.location = 'btms.zip'"> Download </button>
+        </div>
+        <div id="loader">
+            <button title="Aгетни / Agents"
+                    onclick="window.location = '../mod_agents'">
+                <img src="images/admin.png" />
+            </button>
+            
+            <button title="Администрация / Administration"
+                    onclick="window.location = '../mod_admin/'">
+                <img src="images/setting.png" />
+            </button>
+        </div>
+    </body>
+</html>

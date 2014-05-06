@@ -1,0 +1,545 @@
+/* 
+    Document   : style
+    Created on : Feb 8, 2010, 6:08:15 PM
+    Author     : root
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+html{
+    width: 100%;
+    height: 100%;
+}
+
+.blockLabel {
+    display: block;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: gray;
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+}
+
+body * {
+    font-size: 15px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+
+.ulNoBullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    background-color:#cfcfcf;
+    padding:10px;
+    height: 68px;
+    list-style: none;
+}
+
+.menu a{
+
+    float:left;
+    background-color:white;
+    padding:1px;
+    text-decoration:none;
+    color:black;
+    min-width: 140px;
+    margin-right: 5px;
+    text-align:center;
+    margin-bottom: 2px;
+
+}
+
+.contents{
+    margin-top:10px;
+    background-color:#cfcfcf;
+    color:black;
+    padding:10px;
+    width: 100%;
+}
+
+.contents a{
+    color:black;
+}
+
+.forms{
+    background-color:white;
+    padding:10px;
+    width: 500px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.labelText {
+    display: inline-block;
+    float: left;
+    clear: none;
+    width: auto;
+    text-align: left;
+}
+
+.sectionDiv {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    width: 700px;
+}
+
+.sectionDivDiscount {
+    width: 550px;
+}
+
+.GoAndBackStyle {
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+label.GoAndBackStyle  {
+    font-weight: bolder;
+    font-size: inherit;
+}
+
+groupDiv:before,
+.groupDiv:after {
+    content:"";
+    display:table;
+}
+.groupDiv:after {
+    clear:both;
+}
+.blockDiv1of4 {
+    width: 100%;
+}
+.blockDiv2of4 {
+    width: 20%;
+}
+.blockDiv3of4 {
+    width: 256px;    
+}
+
+.blockDiv4of4 {
+    width: 218px;
+}
+
+.blockDiv5of4 {
+    width: 23%;
+}
+
+.blockDiv6of4 {
+    width: 18%;
+}
+
+.discountLeft {
+    text-align: left;
+}
+.discountRight {
+    text-align: right;
+}
+
+.colDiv {
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.sublines{
+    border:1px solid silver;
+}
+
+.active{
+    background-color:white;
+}
+
+.inactive{
+    background-color:gray;
+}
+
+input[type=text],
+input[type=password] {
+    border:1px solid silver;
+    display: inline-block;
+}
+
+textarea{
+    border:1px solid silver;
+}
+
+
+.errors{
+    width:40%;
+    margin-left:30%;
+    margin-right:30%;
+    color:red;
+    border:1px solid silver;
+    margin-bottom:10px;
+}
+
+.places{
+    float:left;
+    padding:10px;
+    width:290px;
+    margin-left:10px
+}
+
+.notreserved{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:green;
+    text-align:center;
+    border:2px solid green;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.reserved{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:red;
+    text-align:center;
+    border:2px solid red;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:default;
+}
+
+
+.clicked{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:blue;
+    text-align:center;
+    border:2px solid blue;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.inputAddLineSize {
+    width: 208px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.dateAlignment {
+    float: left;
+}
+
+.tableFix { 
+    border: 3px solid black; 
+}
+
+.oneTwoTime {
+    width: auto;
+    white-space: nowrap;
+}
+
+.liMenu li {
+    display: block;
+    margin: 0 0.15em;
+    float: left;
+}
+
+.tableFix td {
+    margin:0;
+    border-top-width: 0px; 
+    white-space: nowrap;
+    margin-top: 22px;
+    margin-left: 6px;
+    border: none;
+}
+.divFix {
+    width: 500px;
+    margin: 0 0 0 400px;
+    overflow-x: scroll;  
+    margin-left: 5em; 
+    overflow-y: visible;
+    padding-bottom: 1px;
+    float: right;
+}
+
+.sublineDiv {
+    border: 1px solid black;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.headcol {
+    position: absolute; 
+    width: 5em; 
+    left: 0;
+    top: auto;
+}
+
+
+.addLine {
+    width: 500px;
+    position: relative;
+}
+.usersTable {
+    text-align: center;
+    border-collapse: collapse;  
+    padding: 10px;
+
+}
+
+.usersTable th {
+    border: 1px solid black;
+    background: wheat;
+}
+.usersTable tbody td {
+    border: 1px solid black;
+    border-bottom: 1px solid #000;
+    background: white;
+}
+
+.daysTable td {
+    background: white;
+    border: 1px solid black;
+}
+.daysTable th {
+    background: wheat;
+    border: 1px solid black;
+}
+
+.userAccessTable {
+    border-collapse: collapse; 
+}
+
+.addCenter {
+    text-align: center;
+}
+
+
+.userAccessTable td ,.userAccessTable th ,.userAccessTable tr {
+    border: 1px solid black;
+    border-bottom: 1px solid #000;
+    background: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .menu a {
+        min-width: 17%;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .contents
+    {
+        width: 100%;
+    }
+    .menu a {
+        width: 23%;
+        height: 28px;
+        padding-top: 11px;
+    }
+    .forms input[type=text], input[type=password]
+    {
+        padding: 6px 0;
+    }
+    .forms input[type="submit"]
+    {
+        padding: 6px;
+    }
+    /*    .forms
+        {
+            width: 100%;
+        }*/
+}
+
+@media only screen and (max-width: 640px) { 
+
+    .contents button
+    {
+        padding: 6px;
+    }
+    .contents
+    {
+        width: 100%;
+    }
+    .menu a {
+        min-width: 23%;
+        height: 28px;
+        padding-top: 11px;
+    }
+    .forms input[type=text], input[type=password]
+    {
+        padding: 6px 0;
+    }
+    .forms input[type="submit"]
+    {
+        padding: 6px;
+    }
+    .forms
+    {
+        /*width: 100%;*/
+    }
+}
+
+@media only screen and (max-width: 480px) { 
+    .contents{
+        width: 100%;
+    }
+    .contents button
+    {
+        padding: 6px;
+    }
+    .menu a {
+        min-width: 47%;
+        height: 29px;
+        padding-top: 10px;
+    }
+
+    .forms input[type=text], input[type=password]
+    {
+        padding: 6px 0;
+    }
+    .forms input[type="submit"]
+    {
+        padding: 6px;
+    }
+    .forms
+    {
+        /*width: 100%;*/
+    }
+    .col { 
+        margin: 1% 0 1% 0%;
+    }
+    .sectionDiv {
+        width: 288px;
+    }
+    .blockDiv1of4,.blockDiv2of4,.blockDiv3of4 {
+        width: 100%;
+    }
+    .labelText {
+        clear: both;
+    }
+    .dateAlignment {
+        float: right;
+    }
+   
+}
+
+@media only screen and (max-width: 360px) {
+    .wrapper {
+        width: 100%;
+    }
+    .menu {
+        height: 176px;
+    }
+
+    .contents{
+        min-width: 100%;
+    }
+    .contents button
+    {
+        padding: 6px;
+    }
+    .sublineDiv {
+        width: 290px;
+    }
+    .divFix {
+        width: 186px;
+    }
+    .menu a {
+        min-width: 47%;
+        height: 29px;
+        padding-top: 10px;
+    }
+    .forms input[type=text], input[type=password]
+    {
+        padding: 6px 0;
+        width: 150px;
+    }
+
+    .forms input[type="submit"]
+    {
+        padding: 6px;
+    }
+    .forms
+    {
+        width: 285px;
+        height: 50px;
+    }
+    .oneTwoTime {
+        width: 174px;
+        white-space: normal;
+    }
+
+    .usersTable {
+        margin-top: 5%;
+        width: 90%;
+    }
+    .userAccessTable {
+        margin-top: 15px;
+        width: 290px;
+    }
+    label.userAccessTable {
+        border: 1px solid black;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .contents {
+        padding: 1px;
+        width: 100%;
+    }
+    .addLine {
+        width: auto;
+    }
+    .labelText {
+        clear: both;
+    }
+  
+
+}
+
+
+
+

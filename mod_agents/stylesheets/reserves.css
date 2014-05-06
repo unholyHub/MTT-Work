@@ -1,0 +1,127 @@
+.places{
+    padding:10px;
+    width:272px;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right: auto; 
+    display: block;
+}
+
+
+.reserve_form {
+    padding:10px;
+    width:320px;
+    margin-left:auto;
+    margin-right: auto; 
+    display: block;
+}
+
+.notreserved {
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:green;
+    text-align:center;
+    border:2px solid green;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.reserved{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:red;
+    text-align:center;
+    border:2px solid red;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:default;
+}
+
+.head{
+    margin-bottom: 10px;
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+}
+.clicked{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:blue;
+    text-align:center;
+    border:2px solid blue;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.promotions{
+    margin-top:15px;
+}
+
+.promo_title{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.promo_link{
+    margin-left:10px;
+}
+
+.promo_link a{
+    text-decoration:none;
+    color:red;
+}
+
+.promo_link a:hover{
+    color:#1800a9;
+    text-decoration:underline;
+}
+
+.ezp-code{
+    border: 4px double blue;
+    color:white;
+
+}
+
+.ezp-code span{
+    background: #7b7bff;
+    padding: 2px;
+}
+
+small  {
+    font-size: 10px;
+}
+
+.addnumber {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addnumber input[type=text], .addnumber label {
+    padding: 10px;
+}
+
+
+.textInput {
+    display: inline-block;
+    width: 37%;
+    height: 30px;
+    text-align: left;
+    padding-left: 82px;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-left: 14px;
+    width: 175px;
+    display: inline;
+}

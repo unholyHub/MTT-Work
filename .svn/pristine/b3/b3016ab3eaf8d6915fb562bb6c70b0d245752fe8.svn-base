@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MTT Ticket</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                padding: 10px;
+                font-family: 'DejaVu Sans Mono';
+                font-size: 14px;
+            }
+            
+            body * {
+                font-size: 12px;
+            }
+            .header {
+                border-bottom: 1px solid black;
+            }
+            .header .ticket{
+                float: right;
+                font-size: 28px;
+                line-height: 128px;
+            }
+            
+            .content {
+                font-size: 14px;
+                margin-top: 20px;
+            }
+            
+            
+            /*.content > table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .content > table td {
+                border: 1px solid black;
+            }*/
+        </style>
+    </head>
+    <body>
+        <table style="width: 100%">
+            <tr>
+                <td style="width: 170px;">
+                    <img align="left" src="../resources/logo.jpg" />
+                </td>
+                <td>
+                    <p style="text-align: right;">
+                        International Transport and Tourism Ltd<br/>
+                        Headquarter: 84, Kn. Maria Luiza Blvd. Sofia, Bulgaria<br/>
+                        tel. +359 2 4186501/03; fax 4186502<br/>
+                        mobile: +359 899 980 443; +359 899 980430<br/>
+                        e-mail: office@mttsofia.com<br/>
+                        www.mttsofia.com            <br/>
+                    </p>
+                </td>
+            </tr>
+            
+        </table>
+        <hr />
+        <div class="content" style="">
+            ${content}
+        </div>
+    </body>
+</html>

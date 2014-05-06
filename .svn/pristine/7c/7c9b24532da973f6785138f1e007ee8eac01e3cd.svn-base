@@ -1,0 +1,161 @@
+<?php
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of InvoiceSession
+ *
+ * @author alexander
+ */
+include_once 'gui.php';
+include_once './controllers/Invoices.php';
+include_once './controllers/Invoice_elements.php';
+include_once './controllers/Session.php';
+include_once './controllers/Reservations.php';
+
+class InvoiceSession extends gui {
+    public function __construct() {
+        Session::user_auth();
+        parent::__construct();
+    }
+    
+    static function create() {
+        if(!isset($_SESSION['invoice'])) {
+            $invoice = new Invoice();
+            $_SESSION['invoice']['id'] = $invoice->insert();
+            $_SESSION['invoice']['elements'] = array();
+        }
+    }
+    
+    static function addInvoiceElement($reservationId) {
+        if(!isset($_SESSION['invoice']) || !isset($_SESSION['invoice']['id'])) {
+            self::create();
+        }
+        
+        $ie = new Invoice_element();
+        $ieCtrl = new Invoice_elements();
+        
+        $ieCtrl->invoice_id = $_SESSION['invoice']['id'];
+        $ieCtrl->reservation_id = $reservationId;
+        
+        
+        $_SESSION['invoice']['elements'][] = $ie->insert($ieCtrl);
+    }
+    
+     public function index() {
+        
+        $this->page_contents = '';
+        $data = array(
+            '<div >',
+            "<h1 class='invoice' >Invoice #{$_SESSION['invoice']['id']}</h1>",
+            '</div>',
+            '<div style="text-align: center;margin: 16px auto;">',
+            '<a  href="./clear_invoice_session.php"><button  class="invoice" >'.locales::$text['clear_invoice'].'</button></a>',
+            '</div>'
+            
+        );
+        
+        if(isset($_SESSION['invoice']) && count($_SESSION['invoice']['elements'])) {
+            $reservationsHandler = new Reservation();
+            $reservations = $reservationsHandler->find(array(
+                'all'=>true, 
+                'where'=>'id IN (select reservation_id from invoice_elements where id in(null, '.implode(',', $_SESSION['invoice']['elements']).'))'
+                ));
+            
+            $discount = new Discount();
+            
+            $sum = 0;
+            foreach($reservations as $reservation) {
+                $disc = $discount->find(array(id => $reservation->discount_id));
+                $sum = $sum + $reservation->price;
+                
+                    $data[] = '<div id="parent" class="invoice">';
+                    
+                  $data[] = '<div class="right2"><a href="./delete_invoice_session_element.php?id='.$reservation->id.'"><button class="invoice">X</button></a></div>';
+                $data[] = '<div class="left">'.locales::$text[report_place].'</div>';
+                  
+                    $data[] = "<div class='right2'>$reservation->place</div>";
+                $data[] = '<div class="left">'.locales::$text[report_place_back].'</div>';
+                 
+                       $data[] = "<div class='right2'>".($reservation->ticket_type == 0 || $reservation->ticket_type == 2 ? locales::$text[none] : $reservation->place_back)."</div>";
+                $data[] = '<div class="left">'.locales::$text[report_ticket].'</div>';
+                 
+                    $data[] = '<div class="right2">'.($reservation->ticket_type == 0 ? locales::$text[ticket_oneway] : ($reservation->ticket_type == 2 ? locales::$text[ticket_opened_twoway] : locales::$text[ticket_twoway])).'</div>';
+                $data[] = '<div class="left">'.locales::$text[report_ticket_type].'</div>';
+                
+                    $data[] = "<div class='right2'>$reservation->ticket_number</div>";
+                $data[] = '<div class="left">'.locales::$text[report_name].'</div>';
+                
+                
+                    $data[] = '<div class="right2">'.ucwords($reservation->passenger_name).'</div>';
+                $data[] = '<div class="left">'.locales::$text[report_passport].'</div>';
+                
+                    $data[] = '<div class="right2">'.$reservation->passenger_passpor.'</div>';
+                $data[] = '<div class="left">'.locales::$text[report_discount].'</div>';
+                
+                    $data[] = '<div class="right2">'.($reservation->discount_id == 0 ? locales::$text[none] : (locales::$current_locale == 'bg' ? $disc->name_bg : $disc->name_en)).'</div>';
+                $data[] = '<div class="left">'.locales::$text[report_date].'</div>';
+
+                
+                    $data[] = '<div class="right2">'.date('d.m.Y', strtotime($reservation->date)).'</div>';
+                $data[] = '<div class="left">'.locales::$text[report_date_back].'</div>';
+                
+                    
+                    $data[] = '<div class="right2">'.$reservation->price.' '.locales::$text[report_currency].'</div>';
+                $data[] = '<div class="left">'.locales::$text['report_price'].' </div>';          
+                
+                $data[]= '</div>';
+            }
+        }
+        
+        if(count($reservations)) {
+            $data[] = '<div id="parent">';
+            
+            $data[] = "<div class='right'> $sum ".locales::$text['report_currency']."<button class='invoice' style='float:right'>".locales::$text['pay_invoice']."</button> </div>";$data[] = '<div class="left">'.locales::$text['table_total_price'].'</div>';
+            //<p><div id="pay' class='right'><button  >".locales::$text['pay_invoice']."</button> </p></div>
+            $data[] = '</div>';
+        } else {
+            
+            $data[] = '<div>'.locales::$text[none].'</div>';
+        }
+        
+        $this->page_contents .= '<div>'.implode("\n",$data).'</div>';
+        echo $this->show_page();
+    }
+    
+    public function deleteElement() {
+        if(isset($_SESSION['invoice']) && count($_SESSION['invoice']['elements'])) {
+            $id = (int)$_GET['id'];
+            $invoiceElement = new Invoice_element();
+            $reservationHandler = new Reservation();
+
+            $elements = $invoiceElement->find(array('all'=>true, 'where'=>"reservation_id='$id' and invoice_id='{$_SESSION['invoice']['id']}'"));
+            foreach($elements as $element) {
+                $invoiceElement->query($result, "DELETE FROM invoice_elements WHERE id='$element->id'");
+                unset($_SESSION['invoice']['elements'][array_search($element->id, $_SESSION['invoice']['elements'])]);
+            }
+
+            $reservationHandler->query($result, "DELETE FROM reservations WHERE id='$id'");
+
+        }
+        
+        header('location: '.$_SERVER['HTTP_REFERER']);
+    }
+    
+    public function clear() {
+        if(isset($_SESSION['invoice']['id'])) {
+            $invoice = new Invoice();
+            
+            $invoice->delete($_SESSION['invoice']['id']);
+            
+            $_SESSION['invoice']['elements'] = array();
+        }
+        
+        header('location: '.$_SERVER['HTTP_REFERER']);
+    }
+}
+
+?>

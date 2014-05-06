@@ -1,0 +1,52 @@
+root { 
+    display: block;
+}
+
+body {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+table.result {
+    width: 100%;
+    border: 1px solid rgb(151, 151, 151);
+    padding: 10px;
+    border-radius: 10px;
+    
+    margin: 20px 0;
+}
+
+table.result th {
+    background: rgb(235, 238, 160);
+    border-radius: 3px;
+    padding: 3px;
+    border: 1px solid rgb(151, 151, 151);
+}
+
+table.result .travel-data td {
+    padding: 2px;
+    border-bottom: 1px dashed gray;
+}
+
+table.result .travel-data.header td {
+    font-weight: bold;
+    border-bottom-style: solid;
+}
+
+table.result .travel-data.center td {
+    text-align: center;
+}
+
+table.result .travel-data td:nth-child(3) {
+    border-right: 1px dashed gray;
+}
+
+.buy-button {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.results {
+    margin-top: 20px;
+}

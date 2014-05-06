@@ -1,0 +1,239 @@
+.places {
+    width: 272px;
+    margin: 55px auto;
+}
+
+.reserve_form {
+    margin: 20px auto;
+    width: 320px;
+}
+
+.notreserved{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:green;
+    text-align:center;
+    border:2px solid green;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.reserved{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:red;
+    text-align:center;
+    border:2px solid red;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:default;
+}
+
+.head {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.clicked{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:blue;
+    text-align:center;
+    border:2px solid blue;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.promotions{
+    margin-top:15px;
+}
+
+.promo_title{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.promo_link{
+    margin-left:10px;
+}
+
+.promo_link a{
+    text-decoration:none;
+    color:red;
+}
+
+.promo_link a:hover{
+    color:#1800a9;
+    text-decoration:underline;
+}
+
+.ezp-code{
+    border: 4px double blue;
+    color:white;
+
+}
+
+.ezp-code span{
+    background: #7b7bff;
+    padding: 2px;
+}
+
+#cart_list {
+    font-size: 13px;
+}
+
+@media only screen and (min-width : 1024px) {
+    .reserve_form {
+        margin: 40px 40px 0px auto;
+        width: 419px;
+        float: left;
+    }
+    .places {
+        width: 272px;
+        float: left;
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (max-width : 1024px) {
+    .reserve_form {
+        width: 462px;
+        margin: 65px auto;
+        float: left;
+    }
+    .places {
+        width: 279px;
+        float: left;
+        margin: 30px auto auto 65px;
+    }
+  
+    #cart_list {
+        width: 100%;
+    }   
+}
+
+@media only screen and (max-width : 800px) {
+    .reserve_form {
+        width: 422px;
+        float: left;
+    }
+    .places {
+        width: 274px;
+        float: left;
+        margin: 30px auto;
+    }    
+    #cart_list {
+        width: 100%;
+    }   
+}
+
+@media only screen and (max-width : 768px) and (-webkit-min-device-pixel-ratio: 2) {
+    .reserve_form {
+        width: 410px;
+        margin-left: 88px;
+    }
+    .places {
+        width: 271px;
+        padding: 0;
+        float: left;
+        margin-left: 145px;
+    }
+
+    #cart_list {
+        width: 100%;
+    }   
+}
+
+
+@media only screen and (max-width : 720px) {
+    .reserve_form {
+        width: 422px;
+        float: left;
+    }
+    .places {
+        width: 280px;
+        float: left;
+        margin: 30px auto;
+    }
+  
+    #cart_list {
+        width: 100%;
+    }   
+}
+
+@media only screen and (max-width : 640px) {
+    .reserve_form {
+        width: 80%;
+        margin-left: 54px;
+    }
+    .places {
+        width: 271px;
+        padding: 0;
+        margin-left: 120px;
+    }
+
+    #cart_list {
+        width: 100%;
+    }   
+}
+
+@media only screen and (max-width : 480px){
+    .reserve_form {
+        width: 375px;
+        margin: 15px auto auto 55px;
+    }
+    .places {
+        width: 271px;
+        margin-left: 70px;
+    }
+
+    #cart_list {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 430px){
+    .reserve_form {
+        width: 300px;
+        margin: auto auto auto 20px ;
+    }
+    .places {
+        width: 271px;
+        margin:auto auto auto 36px;
+    }
+    .form {
+        width: 100%;
+    } 
+    #cart_list {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .reserve_form {
+        width: 268px;
+        margin: auto;
+        float: left;
+    }
+    .places {
+        width: 271px;
+        margin:1px auto;
+    }
+
+    #cart_list {        
+        width: 100%;
+    }
+}

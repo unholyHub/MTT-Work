@@ -1,0 +1,248 @@
+.places{
+    float:left;
+    padding:10px;
+    width:272px;
+    margin-left:10px
+}
+
+
+.reserve_form{
+    float:left;
+    padding:10px;
+    width:320px;
+}
+
+.notreserved{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:green;
+    text-align:center;
+    border:2px solid green;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.reserved{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:red;
+    text-align:center;
+    border:2px solid red;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:default;
+}
+
+.head{
+    font-weight:bold;
+    font-size:20px;
+    text-align:center;
+}
+.clicked{
+    float:left;
+    width:40px;
+    height:40px;
+    font-size:30px;
+    color:blue;
+    text-align:center;
+    border:2px solid blue;
+    line-height:40px;
+    margin-left:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.promotions{
+    margin-top:15px;
+}
+
+.promo_title{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.promo_link{
+    margin-left:10px;
+}
+
+.promo_link a{
+    text-decoration:none;
+    color:red;
+}
+
+.promo_link a:hover{
+    color:#1800a9;
+    text-decoration:underline;
+}
+
+.ezp-code{
+    border: 4px double blue;
+    color:white;
+
+}
+
+.ezp-code span{
+    background: #7b7bff;
+    padding: 2px;
+}
+
+small  {
+    font-size: 10px;
+}
+
+.addnumber {
+    width: 50%;
+    float: left;
+    margin-left: 20%;
+}
+
+.textInput {
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+
+@media only screen and (max-width: 768px) { 
+    .places {
+        float: left;
+        padding: 0;
+        width: 38%;
+        margin-left: 0;
+    }
+    .reserve_form {
+        width: 48%;
+        float: none;
+    }
+    #ticketDestination {
+        width: 99%;
+    }
+    
+}
+
+@media only screen and (max-width: 720px) {
+    .places {
+        width: 275px;
+    }
+     .inputBottom {
+        width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    .reserve_form {
+        width: 45%;
+        float: left;
+    }
+    .places {
+        width: 284px;
+    }
+
+}
+
+@media only screen and (max-width: 568px) {
+    .places {
+        width: 276px;
+    }
+    #ticketDestination {
+        width: 265px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .checkPoint {
+        width: 99%;
+        font-size: 1.9em;
+    }
+
+    .reserve_form {
+        float: left;
+        padding: 0;
+        width: 98%;
+    }
+    .places {
+        float: left;
+        padding: 0;
+        width: 280px;
+        margin-left: 0;
+    }
+
+    .small {
+        font-size: 0.7em;
+    }
+    #ticketDestination {
+        width: 330px;
+    }
+    .inputBottom {
+        margin-bottom: 5%;
+    }
+    .addnumber {
+        width: 200px;
+        margin-left: 15%;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .places {
+        width: 85%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 360px) { 
+    .places {
+        float: left;
+        padding: 0;
+        width:285px;
+        margin-left: 0;
+    }
+    .checkPoint {
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .checkPoint {
+        width: 95%;
+        font-size: 1.9em;
+    }
+
+    .reserve_form {
+        float: none;
+        padding: 0;
+        width: 98%;
+    }
+    .places {
+        float: none;
+        padding: 0;
+        width: 98%;
+        margin-left: 0;
+    }
+
+    small {
+        font-size: 0.7em;
+    }
+    #ticketDestination {
+        width: 99%;
+    }
+    .addnumber {
+        width: 60%;
+    }
+   
+}

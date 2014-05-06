@@ -1,0 +1,1239 @@
+body {
+    font-family: Tahoma,Verdana,Arial,sans-serif;
+    background: #fbf5df;
+    color: #6a6a6a;
+}
+
+a {
+    color: #666666;
+}
+
+a:hover {
+    color: #ED1C24;
+}
+
+h1 a {
+    background-image: url(http://www.mttsofia.com/images/logo.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-indent: -5000px;
+    display: block;
+    height: 128px;
+    width: 170px;
+    overflow: hidden;
+}
+h2 {
+    display: block;
+    float: left;
+    height: 56px;
+    width: 668px;
+    background-image: url(http://www.mttsofia.com/images/slogan_bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-indent: -5000px;
+    overflow: hidden;
+}
+#container {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#header {
+    height: 150px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ED1C24;
+}
+#header .left {
+    float: left;
+    height: 128px;
+    width: 170px;
+}
+#header .right {
+    float: right;
+    height: 128px;
+    width: 790px;
+}
+#header .right span {
+    display: block;
+    float: right;
+    height: 22px;
+    width: 122px;
+    padding-top: 34px;
+    overflow: hidden;
+}
+#header .right span a {
+    text-indent: -5000px;
+    display: block;
+    height: 9px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right top;
+    float: left;
+}
+#header .right span .home {
+    width: 24px;
+    background-image: url(http://www.mttsofia.com/images/home.gif);
+}
+#header .right span .sitemap {
+    width: 36px;
+    background-image: url(http://www.mttsofia.com/images/sitemap.gif);
+}
+#header .right span .email {
+    width: 36px;
+    background-image: url(http://www.mttsofia.com/images/email.gif);
+}
+#header .right span .lang {
+    width: 26px;
+    background-image: url(http://www.mttsofia.com/images/tobg.gif);
+}
+#header .right h3 {
+    display: none;
+}
+#header .right ul {
+    list-style-type: none;
+}
+#header .right li {
+    float: left;
+}
+#header .right .nav {
+    display: block;
+    clear: both;
+    height: 72px;
+    width: 789px;
+    background-image: url(http://www.mttsofia.com/images/bg_nav.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 1px;
+}
+#header .right .button_1 {
+    background-image: url(http://www.mttsofia.com/images/bg_button_1.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: block;
+    height: 72px;
+    width: 224px;
+    overflow: hidden;
+    text-indent: -5000px;
+    margin-right: 1px;
+}
+#header .right .button_2 {
+    background-image: url(http://www.mttsofia.com/images/bg_button_2.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-indent: -5000px;
+    display: block;
+    height: 72px;
+    width: 177px;
+    overflow: hidden;
+    margin-right: 1px;
+}
+#header .right .button_3 {
+    background-image: url(http://www.mttsofia.com/images/bg_button_3.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-indent: -5000px;
+    display: block;
+    height: 72px;
+    width: 170px;
+    overflow: hidden;
+    margin-right: 1px;
+}
+#header .right .button_4 {
+    background-image: url(http://www.mttsofia.com/images/bg_button_4.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-indent: -5000px;
+    display: block;
+    height: 72px;
+    width: 117px;
+    overflow: hidden;
+    margin-right: 1px;
+}
+#header .right .button_4:hover {
+    background-image: url(http://www.mttsofia.com/images/bg_button_4_hover.gif);
+    width: 113px;
+    height: 63px;
+    border-top: 1px solid #FFCC00;
+    margin-left: 1px;
+}
+#header .right .button_5 {
+    background-image: url(http://www.mttsofia.com/images/bg_button_5.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-indent: -5000px;
+    display: block;
+    height: 72px;
+    width: 96px;
+    overflow: hidden;
+    margin-right: 1px;
+}
+#header .right .button_5:hover {
+    background-image: url(http://www.mttsofia.com/images/bg_button_5_hover.gif);
+    width: 95px;
+    margin-left: 1px;
+    height: 71px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #FFCC00;
+}
+#header .right .drop#b1 {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    width: 205px;
+    background-image: url(http://www.mttsofia.com/images/bg_drop_b1.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 62px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #FFCC00;
+    border-right-color: #F2F2F2;
+    border-bottom-color: #F2F2F2;
+    border-left-color: #F2F2F2;
+    background-color: #FFFFFF;
+    padding-bottom: 19px;
+    padding-right: 8px;
+    padding-left: 7px;
+}
+#header .right .drop#b1 a {
+    font-size: 11px;
+    text-decoration: none;
+    display: block;
+    height: 26px;
+    width: 200px;
+    background-image: url(http://www.mttsofia.com/images/bg_drop_b1_line.gif);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    color: #666666;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+#header .right .drop#b1 .two, #header .right .drop#b2 .two, #header .right .drop#b3 .two {
+    padding-top: 4px;
+    height: 33px;
+}
+#header .right .drop#b1 a:hover, #header .right .drop#b2 a:hover, #header .right .drop#b3 a:hover, #header .right .drop#b4 a:hover {
+    color: white;
+}
+#header .right .drop#b2 {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    width: 157px;
+    background-image: url(http://www.mttsofia.com/images/bg_drop_b2.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 62px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #FFCC00;
+    border-right-color: #F2F2F2;
+    border-bottom-color: #F2F2F2;
+    border-left-color: #F2F2F2;
+    background-color: #FFFFFF;
+    padding-bottom: 19px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+#header .right .drop#b2 a {
+    font-size: 11px;
+    text-decoration: none;
+    display: block;
+    height: 26px;
+    width: 152px;
+    background-image: url(http://www.mttsofia.com/images/bg_drop_b2_line.gif);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    color: #666666;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+#header .right .drop#b3 {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    width: 150px;
+    background-image: url(http://www.mttsofia.com/images/bg_drop_b3.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 62px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #FFCC00;
+    border-right-color: #F2F2F2;
+    border-bottom-color: #F2F2F2;
+    border-left-color: #F2F2F2;
+    background-color: #FFFFFF;
+    padding-bottom: 19px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+#header .right .drop#b3 a {
+    font-size: 11px;
+    text-decoration: none;
+    display: block;
+    height: 26px;
+    width: 145px;
+    background-image: url(http://www.mttsofia.com/images/bg_drop_b3_line.gif);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    color: #666666;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+
+
+#header .right .drop#b4 {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    width: 96px;
+    background-image: url(http://www.mttsofia.com/images/bg_button_4_hover.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 62px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #FFCC00;
+    border-right-color: #F2F2F2;
+    border-bottom-color: #F2F2F2;
+    border-left-color: #F2F2F2;
+    background-color: #FFFFFF;
+    padding-bottom: 19px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+#header .right .drop#b4 a {
+    font-size: 11px;
+    text-decoration: none;
+    display: block;
+    height: 26px;
+    width: 94px;
+    background-image: url(http://www.mttsofia.com/images/bg_drop_b3_line.gif);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    color: #666666;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+
+
+
+
+#header .right li:hover .drop#b1, #header .right li:hover .drop#b2, #header .right li:hover .drop#b3, #header .right li:hover .drop#b4 {
+    display: block;
+    margin-left: 1px;
+}
+#header .right ul h4 {
+    font-size: 11px;
+    background-image: url(http://www.mttsofia.com/images/bg_drop_h4.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 19px;
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 145px;
+    color: #333333;
+}
+#header .right .no_border {
+    background-image: none !important;
+    height: 25px !important;
+}
+#path {
+    display: block;
+    height: 41px;
+    background-image: url(http://www.mttsofia.com/images/path.gif);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-left: 9px;
+}
+#path .title {
+    display: block;
+    height: 39px;
+    width: 161px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-indent: -5000px;
+    overflow: hidden;
+    margin-right: 43px;
+    margin-top: 1px;
+}
+#path span {
+    background-image: url(http://www.mttsofia.com/images/arrow.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: block;
+    float: left;
+    height: 39px;
+    width: 7px;
+    overflow: hidden;
+    text-indent: -5000px;
+    margin-right: 12px;
+    margin-top: 1px;
+}
+#path .subtitle {
+    display: block;
+    float: left;
+    width: auto;
+    font-size: 11px;
+    font-weight: bold;
+    color: #666666;
+    text-decoration: none;
+    margin-top: 13px;
+}
+#path .subtitle:hover {
+    text-decoration: underline;
+}
+#content {
+    display: block;
+    width: 960px;
+}
+#content .splash {
+    margin-top: 20px;
+    margin-bottom: 11px;
+}
+#content .text {
+    font-size: 11px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+#content .text#no_margin {
+    margin-bottom: 0px;
+}
+dt {
+    font-size: 11px;
+}
+dd {
+    font-size: 11px;
+    color: #333333;
+    margin-left: 20px;
+}
+
+#content .box {
+    width: 960px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ED1C24;
+    height: 130px;
+    overflow: hidden;
+    clear: both;
+}
+#content .box ul {
+    display: block;
+    list-style-type: none;
+    float: left;
+    width: 712px;
+    height: 110px;
+    background-image: url(http://www.mttsofia.com/images/bg_box_ul.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 20px;
+}
+#content .box li {
+    float: left;
+}
+#content .box ul a {
+    display: block;
+    width: 340px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    overflow: hidden;
+    text-indent: -5000px;
+}
+#content .box .res_1 {
+    margin-right: 21px;
+    margin-bottom: 10px;
+}
+#content .box .res_2 {
+}
+#content .box .res_3 {
+    margin-right: 21px;
+}
+#content .box .res_4 {
+}
+#content .box p {
+    display: block;
+    float: right;
+    height: 106px;
+    width: 228px;
+    overflow: hidden;
+    font-size: 10px;
+    color: #666666;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 24px;
+}
+#content .box_inside {
+    clear: both;
+}
+
+#left {
+    float: left;
+    width: 170px;
+    padding-bottom: 20px;
+}
+#left ul {
+    list-style-type: none;
+}
+#left li {
+    display: inline;
+}
+#left a {
+    display: block;
+    width: 149px;
+    font-size: 11px;
+    text-decoration: none;
+    background-image: url(http://www.mttsofia.com/images/bg_left_a.gif);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    color: #666666;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+}
+#left .no_border {
+    background-image: none;
+    height: 24px;
+}
+#left .no_border:hover {
+    background-image: url(http://www.mttsofia.com/images/bg_left_a_nborder.gif);
+    background-position: top;
+}
+
+#left a:hover {
+    color: #ED1C24;
+    background-image: url(http://www.mttsofia.com/images/bg_left_a_hover.gif);
+    background-position: top;
+}
+#left h4 {
+    display: block;
+    height: 19px;
+    width: 149px;
+    font-size: 11px;
+    background-image: url(http://www.mttsofia.com/images/bg_left_h4.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    color: #666666;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+#right {
+    float: right;
+    width: 771px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size:11px;
+    color: #666666;
+}
+
+#box {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ED1C24;
+    margin-top: 10px;
+    height: 50px;
+    background-image: url(http://www.mttsofia.com/images/bg_res.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 960px;
+    padding-top: 20px;
+}
+#box ul {
+    list-style-type: none;
+}
+#box li {
+    float: left;
+}
+#box a {
+    display: block;
+    height: 50px;
+    width: 306px;
+    text-indent: -5000px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-right: 21px;
+}
+#box .res_1 {
+}
+#box .res_2 {
+}
+#box .res_3 {
+    margin-right: 0px;
+}
+#footer {
+    margin-top: 20px;
+    padding-top: 13px;
+    padding-bottom: 20px;
+    background-image: url(http://www.mttsofia.com/images/bg_footer.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+#footer p {
+    font-size: 11px;
+    color: #CCCCCC;
+}
+#footer p a {
+    color: #999999;
+    text-decoration: none;
+}
+#footer p a:hover {
+    text-decoration: underline;
+}
+#footer p span {
+    float: right;
+}
+.hidden {
+    display: none;
+}
+.clear {
+    clear: both;
+}
+.table {
+    font-size: 11px;
+    font-weight: bold;
+    color: #666666;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #E1E1E1;
+    border-bottom-color: #E1E1E1;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #E1E1E1;
+}
+.table tr {
+    background-color: #FFFFFF;
+}
+.table .row_2 {
+    background-color: #F5F5F5;
+}
+
+
+.table th {
+    background-color: #FFCC00;
+    color: #333333;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: left;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #FFFFFF;
+    border-bottom-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #FFFFFF;
+
+}
+.table .lborder {
+    background-image: url(http://www.mttsofia.com/images/white_line.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 5px;
+}
+.table .rborder {
+    background-image: url(http://www.mttsofia.com/images/white_line.gif);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-right: 5px;
+    border-right-color: #E1E1E1;
+}
+.table td {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: top;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #E1E1E1;
+}
+.table .gborder {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #E1E1E1;
+}
+.blue {
+    color: #333399;
+}
+.red {
+    color: #CC0000;
+}
+.violet {
+    color: #666699;
+}
+.gray {
+    color: #333333;
+}
+
+.gray1 {
+    color: #333333;
+    font-weight: normal;
+}
+
+label {
+    display: block;
+    padding-bottom: 2px;
+}
+form .tick {
+    height: auto;
+    width: auto;
+    padding: 0px;
+    line-height: 12px;
+}
+form textarea {
+    height: 70px;
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-left: 4px;
+    width: 297px;
+}
+form .button {
+    color: #FFFFFF;
+    background-color: #E11116;
+    width: 80px;
+    font-weight: bold;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    padding-top: 1px;
+    padding-bottom: 4px;
+    height: 20px;
+    line-height: 16px;
+}
+
+small
+{
+    font-size: 11px;
+}
+
+
+
+.table1 {
+    font-size: 11px;
+    color: #666666;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #E1E1E1;
+    border-bottom-color: #E1E1E1;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #E1E1E1;
+}
+.table1 tr {
+    background-color: #FFFFFF;
+}
+.table1 .row_2 {
+    background-color: #F5F5F5;
+}
+
+.table1 th {
+    text-align:center;
+    background-color: #FFCC00;
+    color: #333333;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+    text-align: left;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #FFFFFF;
+    border-bottom-color: #FFFFFF;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #FFFFFF;
+
+}
+.table1 .lborder {
+    background-image: url(http://www.mttsofia.com/images/white_line.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 16px;
+}
+.table1 .rborder {
+    background-image: url(http://www.mttsofia.com/images/white_line.gif);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-right: 16px;
+    border-right-color: #E1E1E1;
+}
+.table1 td {
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    vertical-align: top;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #E1E1E1;
+}
+.table1 .gborder {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #E1E1E1;
+}
+
+.greenSelect {
+    background:url("http://www.bgrazpisanie.com/public/css/images/bgrazpisanie.png") no-repeat scroll -32px -26px transparent;
+    min-width:52px;
+    background-color:#f5edd2;
+    color:#585858;
+    z-index:1;
+    display: none;
+}
+
+.greenSelect select {
+    background: transparent;
+    -webkit-appearance: none;
+    width: 100px;
+    font-size: 11px;
+    border: 0;
+    height: 17px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.floatLeft {
+    float:left;
+}
+
+.floatRight{
+    float:right;
+}
+
+.cursorPointer{
+    cursor:pointer
+}
+.greenInputsLeft {
+    background:url( "http://www.bgrazpisanie.com/public/css/images/bgrazpisanie.png") no-repeat scroll -42px 0 transparent;
+    width:5px;
+    height:26px;
+}
+
+.valueGreenSelect {
+    margin:3px 0 0;
+    padding:0 14px 0 3px;
+}
+
+.greenInputsMiddle {
+    height:27px;
+    background:url("http://www.bgrazpisanie.com/public/css/images/middle/input-green-middle.png") repeat-x scroll 0 0 transparent;
+    color:#6a6a6a;
+    font-size:11px;
+    font-family:Tahoma,sans-serif;
+}
+
+.greenInputArrow {
+    background:url("http://www.bgrazpisanie.com/public/css/images/bgrazpisanie.png") no-repeat scroll -32px -26px transparent;
+    width:24px;
+    height:24px;
+}
+
+.inputPointsMiddle input[type="text"] {
+    width:auto;
+    height: auto;
+    border: none;
+    color: #6a6a6a;
+    font-weight: bold;
+}
+
+.inputPointsMiddle {
+    width:auto;
+}
+.containerGreenInput{
+    margin:2px 0 0 0
+
+}
+
+.greenInputsRight{
+    background:url("http://www.bgrazpisanie.com/public/css/images/bgrazpisanie.png") no-repeat scroll -47px 0 transparent;
+    width:6px;
+    height:26px
+}
+
+.daysSearchingForm {
+    margin: -6px auto auto 3px; 
+}
+
+.bigGreenButton {
+    cursor:pointer;
+}
+
+.bigGreenButtonLeft {
+    background:url("http://www.bgrazpisanie.com/public/css/images/bgrazpisanie.png") no-repeat scroll 0 0 transparent;
+    height:22px;
+    width:4px;
+    border-bottom-left-radius: 57px;
+}
+
+.bigGreenButtonMiddle {
+    width: auto;
+    height:22px;
+    background:url("http://www.bgrazpisanie.com/public/css/images/middle/bigSubmitMiddle.png") repeat-x scroll 0 0 transparent;
+    cursor:pointer;
+    padding:1px 0px 0px 1px;
+}
+.bigGreenButtonRight {
+    background:url("http://www.bgrazpisanie.com/public/css/images/bgrazpisanie.png") no-repeat scroll -8px 0 transparent;
+    height:21.9px;
+    width:5px;
+    border-bottom-right-radius: 108px;
+}
+
+.greenDivider {
+    background: url("http://www.bgrazpisanie.com/public/css/images/middle/headerBackgr1.gif") repeat-x scroll 0 100% transparent;
+}
+
+.menuDivider {
+    height: 5px;
+    width: auto;
+}
+
+menuContainer {
+    height: 27px;
+    background: url("http://www.bgrazpisanie.com/public/css/images/middle/menu-bg.png") repeat-x scroll 0 0 transparent;
+
+}
+
+.menuContainer{
+    height: 27px;
+    background:url("http://www.bgrazpisanie.com/public/css/images/middle/menu-bg.png") 
+}
+
+.menu-tab {
+    color:#e3e3e3;
+    font-family:Tahoma,Verdana,Arial,sans-serif;
+    font-size:12px;
+    font-weight:700;
+    height:34px;
+    line-height:29px;
+    padding-left:10px;
+    padding-right:10px;
+    text-decoration:none;
+}
+
+.menu-active-tab,.menu-tab:hover {
+    color:#fff;
+    text-shadow:1px 1px #000;
+}
+
+
+.sublineSearchBufferCellLink {
+    color:inherit;
+    text-decoration:none;
+    line-height:21px;
+}
+
+.classic-buy-button {
+    vertical-align: middle;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 5px;
+}
+
+.classic-buy-button {
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 14px;
+}
+
+box-corners-all {
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 14px;
+}
+.layout-block-c {
+    width:15%;
+    float:right;
+    margin: -10px 12px 0px 0px;
+}
+
+.red-button,.classic-buy-button {
+    color:#fff;
+    border:.1em solid #f53930;
+    background:#e83d35;
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f04f47,endColorstr=#e83d35);
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#fbcfcc',EndColorStr='#e83d35');
+    background-image:linear-gradient(#f04f47,#e83d35);
+}
+
+.red-button:hover,.classic-buy-button:hover {
+    text-decoration:none!important;
+    background:#f04f47;
+    filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#e83d35,endColorstr=#f04f47);
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#e83d35',EndColorStr='#f04f47');
+    background-image:linear-gradient(#e83d35,#f04f47);
+}
+
+.dateTwoway {
+    width: 700px;
+    margin: -3px auto;
+}
+
+.date {
+    font-size:  16px;
+}
+.twoWayCheckbox {
+    margin: -2px auto;
+}
+
+.twoWay {
+
+}
+.submitArrows {
+    margin: -6px 0px 10px 4px;
+}
+.basketAndTerms {
+    margin:21px 0px 0px 0px;
+}
+
+.terms {    
+    float:left;
+    font-size: 13px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.contentBox {
+    
+}
+
+@media only screen and (min-width : 1024px) {
+    
+}
+
+
+@media only screen and (max-width : 1024px) {
+    #container {
+        width: 100%;
+    }
+    #content {
+        width: 100%;
+    }
+    #main_menu {
+        width: 100%;
+    }
+    .dateTwoway {
+        width: 700px;
+/*        margin: auto auto auto 200px;*/
+        float: left;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+    #container {
+        width: 100%;
+    }
+    #content {
+        width: 100%;
+    }
+    #main_menu {
+        width: 100%;
+    }
+    .layout-block-c {
+        width: 15%;
+        /*margin: -10px -80px 0px 0px;*/
+    } 
+}
+
+@media only screen and (max-width : 768px) {
+    #container {
+        width: 100%;
+    }
+    #content {
+        width: 100%;
+    }
+    #main_menu {
+        width: 100%;
+    }
+    .dateTwoway {
+        margin: auto;
+        /*width: 229px;*/
+    }
+    .layout-block-c {
+        width: 15%;
+        /*margin: -10px -80px 0px 0px;*/
+    }    
+    .twoWayCheckbox {
+        margin: -4px 5px 0 0;
+    }
+    .contentBox {
+        float: left;
+    }
+    .submitArrows {
+        margin: -5px auto;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    #container {
+        width: 100%;
+    }
+    #content {
+        width: 100%;
+    }
+    #main_menu {
+        width: 100%;
+    }
+    
+    .layout-block-c {
+        width: 15%;
+    }    
+    .twoWayCheckbox {
+        margin: -3px 5px 0 0;
+    }
+    .date {
+        font-size: 13px;
+        margin: 0px 0px 6px 1px;
+    }
+    .contentBox {
+        float: left;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    #container {
+        width: 100%;
+    }
+    #content {
+        width: 100%;
+    }
+    #main_menu {
+        width: 100%;
+    }
+    .date {
+        font-size: 10pt;
+        margin: 0px 0px 10px 0px;
+    }
+    .twoWayCheckbox {
+        margin: 0px 5px 5px -6px;
+    }
+    .contentBox {
+        float: left;
+    }
+    .dateTwoway {
+        width: 192px;
+        margin: 1px auto;
+    }
+    .submitArrows {
+        margin: 0px 0px 0px 10px;
+    }
+    #content input {
+        width: 12.5em;
+    }
+    #content input[type=checkbox] {
+        width: auto;
+    }
+    .layout-block-c {
+        width: 25%;
+        margin: -10px -90px 0px 0px;
+    }
+    .basketAndTerms {
+        margin:21px 0px 0px 0px;
+    }
+    .terms {
+        float: left;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    #container {
+        width: 100%;
+    }
+    #content {
+        width: 100%;
+    }
+    #main_menu {
+        width: 100%;
+    }
+    .date {
+        font-size: 10pt;
+        margin: 0px 0px 10px 0px;
+    }
+    .twoWayCheckbox {
+        margin: 0px 5px 5px -6px;
+    }
+    .dateTwoway {
+        width: 185px;
+    }
+    .submitArrows {
+        float: right;
+        margin: auto;
+    }
+    #content input {
+        width: 11.5em;
+    }
+    #content input[type=checkbox] {
+        width: auto;
+    }
+    .layout-block-c {
+        width: 20%;
+        margin: -5px 12px 0px 0px;
+    }
+    .basketAndTerms {
+        margin:21px 0px 0px 0px;
+    }
+    .terms {
+        float: left;
+    }
+}

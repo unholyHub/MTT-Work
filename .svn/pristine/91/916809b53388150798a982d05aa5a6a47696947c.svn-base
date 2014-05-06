@@ -1,0 +1,157 @@
+<?php
+
+/*
+ * 
+ */
+
+include_once 'gui.php';
+include_once './controllers/Line_points.php';
+include_once './models/Subline.php';
+include_once './models/City.php';
+
+class Sublines extends gui {
+
+    public $id;
+    public $line_id;
+    public $from_point_id;
+    public $to_point_id;
+    public $travel_time;
+    public $price_oneway;
+    public $price_twoway;
+
+    function __construct() {
+        
+    }
+
+    function Sublines($id, $line_id, $from_point_id, $to_point_id, $travel_time, $price_oneway, $price_twoway) {
+        $this->id = $id;
+        $this->line_id = $line_id;
+        $this->from_point_id = $from_point_id;
+        $this->to_point_id = $to_point_id;
+        $this->travel_time = $travel_time;
+        $this->price_oneway = $price_oneway;
+        $this->price_twoway = $price_twoway;
+    }
+
+    public function save_all($elements, $back = false) {
+        $this->line_id = $elements[line_id];
+        foreach ($elements[price_oneway] as $key0 => $val) {
+            foreach ($val as $key1 => $value) {
+                $this->from_point_id = $key0;
+                $this->to_point_id = $key1;
+                $this->travel_time = $elements[travel_time][$key0][$key1];
+                $this->price_oneway = $elements[price_oneway][$key0][$key1];
+                $this->price_twoway = $elements[price_twoway][$key0][$key1];
+                $this->save();
+            }
+        }
+        if ($back)
+            header('location: ./alllines.php');
+        else
+            header('location: ./set_travel_days.php?line_id=' . $elements[line_id] . '&back');
+    }
+
+    public function save() {
+        $subline = new Subline();
+        $subline->insert($this);
+    }
+
+    public function price_table_new($line_id, $back = false, $layout = true) {
+        Session::user_auth(); //is user logged in
+        $line_point = new Line_point();
+        $city = new City();
+        $points = $line_point->find(array(all => '', where => "line_id=$line_id", order => '`order` ' . ($back ? 'DESC' : 'ASC')));
+        $subline = new Subline();
+
+
+        $header = '<tr><td class="headcol">dsdsa</td>';
+        for ($i = 1; $i < sizeof($points); $i++) {//excluding the first point
+            $header.='<th align="left">' . $city->city($points[$i]->city_id, 'bg') . '</th>';
+        }
+
+        $body = '';
+        for ($i = 0; $i < sizeof($points) - 1; $i++) {//excluding the last point
+            $elements = '';
+
+
+            for ($j = 1; $j < sizeof($points); $j++) {
+                if ($j < $i + 1)
+                    $elements.='<td class="inactive"></td>';
+                else {
+                    $osubline = $subline->find(array(all => '', where => "from_point_id=" . $points[$i]->id . " AND to_point_id=" . $points[$j]->id));
+                    $elements.='<td class="active">
+                                   <table>
+                                    <tr><td>
+                                        Еднопосочен:
+                                    </td><td>
+                                        <input type="text" name="subline[price_oneway][' . $points[$i]->id . '][' . $points[$j]->id . ']" value="' . (isset($osubline[0]) ? $osubline[0]->price_oneway : '0') . '" size="3" />лв.<br />
+                                    </td></tr>
+                                    <tr><td>
+                                        Двупосочен:
+                                    </td><td>
+                                        <input type="text" name="subline[price_twoway][' . $points[$i]->id . '][' . $points[$j]->id . ']" value="' . (isset($osubline[0]) ? $osubline[0]->price_twoway : '0') . '" size="3" />лв.
+                                    </td></tr>
+                                    <tr><td>
+                                        Време на пътуване:
+                                    </td><td>
+                                        <input type="text" name="subline[travel_time][' . $points[$i]->id . '][' . $points[$j]->id . ']" value="' . (isset($osubline[0]) ? $osubline[0]->travel_time : '0') . '" size="3" />час(а).
+                                    </td></tr>
+                                    
+                                   </table>
+                                 </td>';
+                }
+            }
+
+            $body.='<tr>
+                      <td class="headcol">' . $city->city($points[$i]->city_id, 'bg') . '</td>
+                      ' . $elements . '
+                    <tr>';
+        }
+
+        
+
+        $header.='</tr>';
+        $this->page_contents = '
+               <form action="./addsublines.php' . ($back || !$layout ? '?back' : '') . '" method="POST">
+                   <div class="divFix">
+                <table class="sublines tableFix">
+                    <input type="hidden" name="subline[line_id]" value="' . $line_id . '" />
+                    ' . $header . '
+                    ' . $body . '
+                    <tr><td colspan="' . (sizeof($points)) . '" align="right">
+                        <input type="submit" value="' . ($layout ? ($back ? 'Завърши' : 'Следваща стъпка') : 'Обнови') . '" name="submit_subline" />
+                    </td></tr>
+                </table>
+                </div>
+               </form>';
+
+        if ($layout)
+            return $this->show_page();
+        else
+            return $this->page_contents;
+    }
+
+    public function options_for_select($selected = null, $lang = 'bg') {
+        $lns = new Line();
+        $lines = $lns->find(array(all => 1));
+        $subln = new Subline();
+        $point = new Line_point();
+        $city = new City();
+        $options = '';
+        foreach ($lines as $line) {
+            $options.='<optgroup label="' . $city->city($line->from_city_id, $lang) . ' - ' . $city->city($line->to_city_id, $lang) . ' ' . $line->id . '">';
+            $sublines = $subln->find(array(all => 1, where => "line_id=$line->id"));
+            foreach ($sublines as $subline) {
+                $from = $point->find(array(id => $subline->from_point_id));
+                $to = $point->find(array(id => $subline->to_point_id));
+                $options.='<option value="' . $subline->id . '" ' . ($selected == $subline->id ? 'selected="selected"' : '') . '>' . $city->city($from->city_id, $lang) . ' - ' . $city->city($to->city_id, $lang) . '</option>';
+            }
+            $options.='</optgroup>';
+        }
+
+        return $options;
+    }
+
+}
+
+?>

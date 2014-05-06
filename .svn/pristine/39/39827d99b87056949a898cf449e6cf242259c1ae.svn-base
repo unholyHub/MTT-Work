@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta  http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link type="text/css" rel="stylesheet" media="all" href="./stylesheets/reports.css">
+            <link rel="icon" type="image/png" href="./images/icon.png" />
+        <script type="text/javascript">
+            function pause(millis) {
+                    var date = new Date();
+                    var curDate = null;
+
+                    do { curDate = new Date(); }
+                    while(curDate-date < millis)
+            }
+            
+            function printReport(button){
+                button.parentNode.style.display='none';
+                
+                window.print();
+                
+                button.parentNode.style.display='';
+            }
+        </script>
+        <title>Отчети BTMS</title>
+    </head>
+    <body>
+        <!-- начало на информационната част-->
+        {{page_contents}}
+        <!-- край на информационната част-->
+    </body>
+</html>

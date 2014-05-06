@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" media="all" href="./stylesheets/style.css">
+        <meta  http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image/png" href="./images/icon.png" />
+        <script type="text/javascript" src="./js/administration.js"></script>
+        <script type="text/javascript" src="./js/datetimepicker_css.js"></script>
+        <title>BTMS Administration version 1.1.3</title>
+    </head>
+    <body>
+        <table align="center" class="wrapper">
+            <tr>
+                <td class="menu">
+                    {{menu}}
+                </td>
+            </tr>
+            <tr>
+                <td class="contents">
+                    <!-- начало на информационната част-->
+                    {{page_contents}}
+                    <!-- край на информационната част-->
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">	
+
+    <head profile="http://www.w3.org/2005/10/profile">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{{title}}</title>
+        <meta name="description" content="Òóðèñòè÷åñêà è òðàâåë êîìïàíèÿ Ðà÷è÷ Âè ïðåäëàãà àâòîáóñíè è ñàìîëåòíè áèëåòè. Äåñòèíàöèè â Åâðîïà.Ïúòóâàíå äî ×åõèÿ è Ãåðìàíèÿ ñ íîâè ëóêñîçíè àâòîáóñè. "  />
+        <meta name="keywords" content="àâòîáóñíè,ñàìîëåòíè,áèëåòè,Ãåðìàíèÿ,Åâðîïà,åêñêóðçèè,×åõèÿ,çàñòðàõîâêè,õîòåë,Áåðëèí,Ëàéïöèã,Ìàãäåáóðã,Õàìáóðã,Âåèåíà,åêñêóðçèè,àáèòóðèåíòñêè,ïî÷èâêè,ìîðå,ñâàòáè,ðåñòîðàíò"  />
+        <meta name="robots" content="all"/>
+        <meta http-equiv="Content-Language" content="bg" />
+        <link rel="icon" type="image/x-icon"  href="http://www.racicbg.com/themes/Racic/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="http://www.racicbg.com/themes/Racic/style/style_in_details.css" />
+        <script src="http://www.racicbg.com/jsfiles.php?func=bust&amp;lang=bg" type="text/javascript" ></script>
+        <!--[if IE 6]><style media="screen" type="text/css"> input.btn_magnify{	display: inline-block;	outline: none; margin-left: 16px;}	</style><![endif]-->
+        <link type="text/css" rel="stylesheet" href="./stylesheets/reserves.css"></link>
+        <link rel="icon" type="image/png" href="./images/icon.png" />
+        <script type="text/javascript" src="./js/datetimepicker_css.js"></script>
+        <script type="text/javascript" src="./js/prototype.js"></script>
+        <script type="text/javascript" src="./js/reservation.js"></script>
+    </head><body><div id="body_bg_t"></div>
+
+        <div id="page">
+
+            <div id="header" style="background-image: http://www.racicbg.com/themes/Racic/images/head_01.gif;">
+
+                <div id="slogan"><a href="http://www.racicbg.com"><img src="http://www.racicbg.com/themes/Racic/images/head_01.gif" width="268" height="81" alt="Racic Eurobus BG" title="Racic Eurobus BG" /></a></div><div style="float: right; right: 5px; bottom: 0; max-width: 100px; height: 18px; position: absolute;"><a href="?{{QUERY_STRING}}lang=bg"><img src="http://www.racicbg.com/themes/Racic/images/flag_bg.gif" width="20" height="12" border="0" alt="Български" title="Български"></a>&nbsp;&nbsp;<a href="?{{QUERY_STRING}}lang=en"><img src="http://www.racicbg.com/themes/Racic/images/flag_uk.gif" width="20" height="12" border="0" alt="English" title="English"></a></div>
+            </div>
+
+
+            <div id="page_main">{{page_contents}}</div>		
+
+
+            <div id="footer">
+                <div class="copyright">(c) 2009 Racic Eurobus BG</div>
+
+                Design by <a href="http://www.glyph-media.com/">glyph graphic &amp; web design</a>.</div>
+
+        </div></div> </body>
+</html>

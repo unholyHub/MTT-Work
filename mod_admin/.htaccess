@@ -1,0 +1,6 @@
+AddHandler x-httpd-php5 .php
+AddDefaultCharset utf-8
+
+<IfModule mod_env.c>
+SetEnv PHPRC /home/racicbg/php.ini
+</IfModule>
